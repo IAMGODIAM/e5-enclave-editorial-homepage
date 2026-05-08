@@ -1,127 +1,1044 @@
 <!doctype html>
+<!-- E5 Enclave · Editorial homepage · v1.0 · Direction C -->
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>E5 Enclave — Editorial Founding Issue</title>
-<meta name="description" content="E5 Enclave Incorporated — Coalition of the Willing. A Black-led civic intelligence, coalition, and institution-building platform based in Liberty City, Miami." />
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://iamgodiam.github.io/e5-enclave-editorial-homepage/">
-<meta property="og:title" content="E5 Enclave — Founding Issue">
-<meta property="og:description" content="A Black-led civic intelligence, coalition, and institution-building platform. The harm was structural. The remedy must be structural.">
-<meta property="og:site_name" content="E5 Enclave">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="E5 Enclave — Founding Issue">
-<meta name="twitter:description" content="A Black-led civic intelligence, coalition, and institution-building platform based in Liberty City, Miami.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"E5 Enclave Incorporated","url":"https://iamgodiam.github.io/e5-enclave-editorial-homepage/","description":"Black-led civic intelligence, coalition, and institution-building platform.","foundingLocation":{"@type":"Place","name":"Liberty City, Miami"},"sameAs":["https://iamgodiam.github.io"]}
-</script>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>E5 Enclave — A Lineage-based Think Tank</title>
+<meta name="description" content="E5 Enclave is a Lineage-based Think Tank comprised of a Coalition of the Willing — building the institutions, evidence systems, and projects the lineage needs to repair, rise, and govern its future."/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="E5 Enclave"/>
+<meta property="og:title" content="E5 Enclave — A Lineage-based Think Tank"/>
+<meta property="og:description" content="A Coalition of the Willing. Founded Juneteenth MMXXVI in Liberty City. For the next thousand years."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:image" content="https://e5enclave.com/assets/og.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="E5 Enclave — A Lineage-based Think Tank"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="E5 Enclave — A Lineage-based Think Tank"/>
+<meta name="twitter:description" content="A Coalition of the Willing. Founded Juneteenth MMXXVI · Liberty City."/>
+<meta name="twitter:image" content="https://e5enclave.com/assets/og.png"/>
+<meta name="theme-color" content="#0a0908"/>
+<link rel="canonical" href="https://e5enclave.com/"/>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap"/>
 <style>
-:root{--paper:#f6f1e7;--paper2:#eee5d5;--ink:#0e0c0a;--ink2:#2a2622;--muted:#6a655c;--hair:#bdb2a2;--hair2:#d7ccbc;--red:#7a1518;--red2:#4d0e10;--gold:#b08a31;--gold2:#f1d18a;--night:#0b0a09;--cream:#f6f1e7}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.45}a{color:inherit}.issuebar{position:sticky;top:0;z-index:20;background:var(--night);color:var(--cream);border-bottom:3px solid var(--red);display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;padding:10px 22px;font-size:11px;text-transform:uppercase;letter-spacing:.18em}.issuebar a{text-decoration:none}.issuebar .center{font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;letter-spacing:.08em;color:#fff}.issuebar .right{text-align:right}.mast{padding:34px 28px 18px;border-bottom:1px solid var(--ink);text-align:center}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--red);font-weight:800}.mast h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(64px,14vw,184px);line-height:.78;margin:16px 0 10px;letter-spacing:-.055em;font-weight:700}.mast .deck{max-width:960px;margin:0 auto;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(24px,3vw,42px);line-height:1.03;color:var(--ink2)}.nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:24px}.nav a{font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);padding:10px 12px}.nav a.primary{background:var(--ink);color:var(--paper)}.wrap{max-width:1240px;margin:0 auto;padding:0 22px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;min-height:74vh;border-bottom:1px solid var(--ink)}.hero-copy{padding:58px 0}.hero-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(52px,7vw,106px);line-height:.91;margin:0 0 24px;letter-spacing:-.04em}.hero-title em{color:var(--red);font-style:italic}.lede{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(22px,2.4vw,34px);line-height:1.13;color:var(--ink2);max-width:820px}.hero-aside{background:var(--night);color:var(--cream);padding:32px;display:flex;flex-direction:column;justify-content:space-between;min-height:580px}.aside-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#d9c084;font-weight:800}.aside-big{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(56px,7vw,112px);line-height:.82;margin:20px 0;letter-spacing:-.04em;color:#fff}.rule{height:1px;background:currentColor;opacity:.25;margin:24px 0}.mantra{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--ink)}.mantra div{padding:28px 20px;border-right:1px solid var(--ink);min-height:155px}.mantra div:last-child{border-right:0}.num{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:900}.mantra h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;line-height:.95;margin:28px 0 0}.section{padding:76px 0;border-bottom:1px solid var(--ink)}.section-head{display:grid;grid-template-columns:.45fr 1fr;gap:32px;margin-bottom:36px}.section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(44px,6vw,92px);line-height:.88;margin:0;letter-spacing:-.04em}.section h2 em{font-style:italic;color:var(--red)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--ink);border:1px solid var(--ink)}.card{background:var(--paper);border:1px solid var(--ink);padding:26px}.card.dark{background:var(--night);color:var(--cream)}.card.red{background:var(--red);color:var(--cream)}.card h3,.card h4{font-family:'Cormorant Garamond',Georgia,serif;font-size:32px;line-height:1;margin:10px 0 14px}.card p{margin:0 0 12px;color:inherit}.small{font-size:14px;color:var(--muted)}.dark .small,.red .small{color:#d8d0c2}.pillars .card{min-height:280px}.pillars .card h3{font-size:34px}.emancipated{grid-column:span 5;background:var(--night);color:var(--cream);display:grid;grid-template-columns:.8fr 1.2fr;gap:26px}.cadence p{font-family:'Cormorant Garamond',Georgia,serif;font-size:27px;line-height:1.05;margin:0 0 8px}.money{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(80px,13vw,190px);line-height:.74;letter-spacing:-.06em;color:var(--red)}.questions{counter-reset:q}.questions p{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start;margin:12px 0}.questions p:before{counter-increment:q;content:counter(q);background:var(--ink);color:var(--paper);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px}.dark .questions p:before{background:var(--paper);color:var(--ink)}
-.mesh-section{padding:76px 0;border-bottom:1px solid var(--ink);background:var(--paper)}.mesh-wrap{position:relative;border:1px solid var(--ink);min-height:680px;background:radial-gradient(circle at center,rgba(122,21,24,.06) 0%,rgba(0,0,0,0) 42%),linear-gradient(180deg,#f7f1e7 0%,#efe5d4 100%);overflow:hidden}.mesh-legend{position:absolute;top:18px;left:18px;z-index:5;display:flex;gap:18px;flex-wrap:wrap;font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--ink2);background:rgba(246,241,231,.92);padding:10px 12px;border:1px solid var(--ink)}.mesh-legend .item{display:flex;align-items:center;gap:8px}.mesh-legend .dot{width:10px;height:10px;border-radius:50%}.mesh-legend .filled{background:var(--gold);border:1px solid var(--gold)}.mesh-legend .outlined{background:transparent;border:1.5px solid var(--gold)}.mesh-legend .dashed{background:transparent;border:1.5px dashed var(--gold)}.mesh-svg{width:100%;height:680px;display:block}.mesh-tooltip{position:absolute;z-index:10;min-width:180px;max-width:260px;pointer-events:none;opacity:0;transition:opacity .18s ease;background:rgba(11,10,9,.96);color:var(--cream);border:1px solid var(--gold);padding:12px 14px}.mesh-tooltip .name{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;line-height:1;margin-bottom:4px;color:#fff}.mesh-tooltip .role{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#d6c7a0;font-weight:700}.mesh-fallback{display:none;position:absolute;inset:0;place-items:center;text-align:center;padding:40px;color:var(--red2)}.mesh-node-label{font-family:Inter,Arial,sans-serif;font-size:9px;font-weight:800;letter-spacing:.12em;fill:var(--red2)}.mesh-core-label{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:900;fill:var(--ink)}
-.directory{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.org{border:1px solid var(--ink);padding:18px;min-height:120px;background:var(--paper)}.org.e5{background:var(--night);color:var(--cream)}.org.open{border-style:dashed}.org h4{margin:4px 0 8px;font-size:18px;text-transform:uppercase;letter-spacing:.08em}.org a{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--red);font-weight:800}.org.e5 a{color:var(--gold2)}.closing{background:var(--night);color:var(--cream);text-align:center;padding:90px 22px}.closing p{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(36px,6vw,86px);line-height:.94;margin:0 auto;max-width:1050px}.footer{padding:34px 22px;background:var(--ink);color:var(--cream);font-size:12px;letter-spacing:.1em;text-transform:uppercase;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:900px){.issuebar{grid-template-columns:1fr;text-align:center}.issuebar .right{text-align:center}.hero,.section-head,.grid2,.grid3,.emancipated{grid-template-columns:1fr}.mantra{grid-template-columns:1fr 1fr}.grid5,.directory{grid-template-columns:1fr}.emancipated{grid-column:span 1}.hero-aside{min-height:auto}.section{padding:52px 0}.mast h1{font-size:72px}.mesh-wrap{min-height:520px}.mesh-svg{height:520px}.mesh-legend{gap:10px;font-size:10px}}
-#progress-bar{position:absolute;bottom:0;left:0;width:0%;height:2px;background:linear-gradient(90deg,var(--red),var(--gold));transition:width .1s linear;pointer-events:none;z-index:25;}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease;}.reveal.visible{opacity:1;transform:none;}.reveal:nth-child(2){transition-delay:.07s;}.reveal:nth-child(3){transition-delay:.14s;}.reveal:nth-child(4){transition-delay:.21s;}.reveal:nth-child(5){transition-delay:.28s;}@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
-.cta-inner{max-width:700px;margin:0 auto;text-align:center;padding:72px 22px;}.join-form{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:2rem;}.join-form input{padding:.75rem 1.25rem;border:1px solid var(--gold);background:transparent;color:var(--paper);font-family:Inter,Arial,sans-serif;font-size:.95rem;min-width:220px;outline:none;}.join-form input::placeholder{color:var(--muted);}.join-form button{padding:.75rem 2rem;background:var(--red);color:var(--paper);border:none;font-family:Inter,Arial,sans-serif;font-size:.95rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;}.join-form button:hover{background:var(--red2);}@media(max-width:900px){.join-form{flex-direction:column;align-items:stretch;}.join-form input,.join-form button{min-width:0;width:100%;}}
-.mesh-recenter{position:absolute;bottom:16px;right:16px;z-index:6;background:rgba(11,10,9,.88);color:var(--gold);border:1px solid var(--gold);padding:6px 14px;font-family:Inter,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;}.mesh-recenter:hover{background:var(--red2);color:var(--paper);}
-@keyframes pulse-seat{0%,100%{stroke-opacity:.55;}50%{stroke-opacity:1;}}.pulse-seat{animation:pulse-seat 2.2s ease-in-out infinite;}
-.mesh-tooltip .tt-link{display:none;margin-top:7px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold2);text-decoration:none;font-weight:700;}.mesh-tooltip .tt-link:hover{color:#fff;}
+  :root {
+    --vc-bone: #f4eee2; --vc-bone-2: #ebe3d1; --vc-bone-3: #e2d8c2;
+    --vc-ink: #0a0908; --vc-ink-2: #1f1c18; --vc-ink-3: #3a342c;
+    --vc-oxblood: #6d1f20; --vc-oxblood-2: #4a1416;
+    --vc-gold: #a8884a; --vc-gold-2: #c4a468;
+    --vc-muted: #6b6457; --vc-muted-2: #8a8270;
+    --vc-rule: rgba(10,9,8,0.14); --vc-rule-2: rgba(10,9,8,0.32); --vc-rule-3: rgba(10,9,8,0.62);
+    --vc-display: "Cormorant Garamond", "Playfair Display", "Times New Roman", serif;
+    --vc-text: "Inter", "Helvetica Neue", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--vc-bone); color: var(--vc-ink);
+    font-family: var(--vc-text); font-size: 14px; line-height: 1.55;
+    font-feature-settings: "kern" 1, "liga" 1; -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  /* Modern type balancing — Chrome 114+ / Firefox 121+ / Safari 17.5+ */
+  .vc-cover-h, .vc-feat-h, .vc-pillars-h, .vc-r246-h, .vc-record-h, .vc-contrib-h,
+  .vc-letter-body h2, .vc-foundation-mark, .vc-foundation-credo,
+  .vc-pillar .name, .vc-record-card .title, .vc-value-row .name {
+    text-wrap: balance;
+  }
+
+  .vc-orn-rule { display: flex; align-items: center; gap: 14px; color: var(--vc-rule-3); }
+  .vc-orn-rule::before, .vc-orn-rule::after { content: ""; flex: 1; height: 1px; background: currentColor; }
+  .vc-orn-rule .mk { font-family: var(--vc-display); font-style: italic; font-size: 18px; color: var(--vc-oxblood); line-height: 1; }
+
+  /* ===== Accessibility primitives ===== */
+  .vc-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .vc-skip { position: absolute; left: -9999px; top: 0;
+    background: var(--vc-ink); color: var(--vc-bone);
+    padding: 12px 20px; font-family: var(--vc-text); font-size: 11px;
+    letter-spacing: 0.36em; text-transform: uppercase; font-weight: 600;
+    z-index: 100; text-decoration: none; }
+  .vc-skip:focus { left: 16px; top: 16px; }
+
+  /* ===== JOIN ===== */
+  .vc-join { padding: 96px 56px; background: var(--vc-bone); border-bottom: 1px solid var(--vc-rule-3); text-align: center; }
+  .vc-join-rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase; color: var(--vc-oxblood); font-weight: 600; margin-bottom: 22px; }
+  .vc-join-h { font-family: var(--vc-display); font-weight: 400; font-size: clamp(44px, 5.4vw, 84px); line-height: 0.98; letter-spacing: -0.024em; margin: 0 auto 24px; max-width: 18ch; }
+  .vc-join-h em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-join-deck { font-family: var(--vc-display); font-style: italic; font-size: 20px; color: var(--vc-ink-2); line-height: 1.5; margin: 0 auto 36px; max-width: 56ch; }
+  .vc-join-cta { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; align-items: center; }
+  @media (max-width: 720px) { .vc-join { padding: 64px 24px; } }
+
+  /* h1 styled identically to the foundation mark — visual unchanged */
+  h1.vc-foundation-mark { font-family: var(--vc-display); font-weight: 500;
+    font-size: clamp(56px, 10vw, 156px); letter-spacing: 0.40em;
+    text-transform: uppercase; color: var(--vc-bone);
+    margin: 0; padding-left: 0.40em; line-height: 1; position: relative; }
+
+  /* ===== MASTHEAD ===== */
+  .vc-masthead { padding: 70px 56px 0; text-align: center; position: relative; overflow: hidden; }
+  .vc-masthead-corners { position: absolute; top: 70px; left: 56px; right: 56px;
+    display: flex; justify-content: space-between; font-size: 9px; letter-spacing: 0.36em;
+    text-transform: uppercase; color: var(--vc-muted); line-height: 1.8; }
+  .vc-masthead-corners em { font-family: var(--vc-display); font-style: italic; font-size: 15px;
+    color: var(--vc-ink); letter-spacing: 0.01em; text-transform: none; display: block; margin-top: 2px; }
+  .vc-masthead-corners .l { text-align: left; }
+  .vc-masthead-corners .r { text-align: right; }
+  .vc-crest { display: block; width: 100%; max-width: 600px; margin: 0 auto 48px; }
+  .vc-crest svg { width: 100%; height: auto; display: block; }
+
+  /* ===== FOUNDATION BLOCK — ENCLAVE plinth ===== */
+  .vc-foundation {
+    --gleam-x: 50%;
+    background:
+      radial-gradient(ellipse 55% 80% at var(--gleam-x) 50%, rgba(196, 164, 104, 0.16), transparent 70%),
+      var(--vc-ink);
+    color: var(--vc-bone);
+    padding: 64px 56px 56px;
+    margin: 0 -56px;
+    text-align: center;
+    position: relative;
+    border-top: 2px solid var(--vc-oxblood);
+    border-bottom: 1.5px solid var(--vc-ink);
+    transition: --gleam-x .25s ease;
+  }
+  @property --gleam-x { syntax: '<percentage>'; initial-value: 50%; inherits: false; }
+  .vc-foundation::before, .vc-foundation::after {
+    content: ""; position: absolute; left: 0; right: 0;
+    height: 1px; background: rgba(244,238,226,0.18);
+    pointer-events: none;
+  }
+  .vc-foundation::before { top: 22px; }
+  .vc-foundation::after { bottom: 22px; }
+  .vc-foundation-mark {
+    font-family: var(--vc-display);
+    font-weight: 500;
+    font-size: clamp(56px, 10vw, 156px);
+    letter-spacing: 0.40em;
+    text-transform: uppercase;
+    color: var(--vc-bone);
+    margin: 0;
+    padding-left: 0.40em;
+    line-height: 1;
+    position: relative;
+  }
+  .vc-foundation-mark .em5 {
+    color: var(--vc-gold-2);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-right: -0.08em;
+  }
+  .vc-foundation-credo {
+    font-family: var(--vc-display);
+    font-style: italic;
+    font-size: clamp(15px, 1.4vw, 20px);
+    color: var(--vc-gold-2);
+    margin-top: 28px;
+    letter-spacing: 0.01em;
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .vc-foundation-credo span.dot { color: var(--vc-bone); opacity: 0.4; padding: 0 12px; }
+  .vc-foundation-meta {
+    margin-top: 22px;
+    font-family: var(--vc-text);
+    font-size: 9.5px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: rgba(244,238,226,0.5);
+    font-weight: 600;
+  }
+
+  /* ===== NAV ===== */
+  .vc-nav { display: flex; gap: 44px; justify-content: center; padding: 18px 56px; flex-wrap: wrap;
+    border-bottom: 1.5px solid var(--vc-ink); font-size: 10.5px; letter-spacing: 0.42em;
+    text-transform: uppercase; font-weight: 500; background: var(--vc-bone);
+    position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .vc-nav a { color: var(--vc-ink); padding: 4px 0; transition: color .2s ease; }
+  .vc-nav a:hover { color: var(--vc-oxblood); }
+  .vc-nav .sep { width: 4px; height: 4px; border-radius: 50%; background: var(--vc-oxblood); align-self: center; opacity: 0.7; }
+
+  /* ===== COVER ===== */
+  .vc-cover { padding: 88px 56px 96px; display: grid; grid-template-columns: 260px 1fr;
+    gap: 72px; border-bottom: 1px solid var(--vc-rule-3); position: relative;
+    max-width: 1480px; margin: 0 auto; }
+  .vc-cover-rail { display: flex; flex-direction: column; gap: 28px; }
+  .vc-cover-rail .vol { font-family: var(--vc-display); font-size: 96px; font-style: italic;
+    color: var(--vc-oxblood); line-height: 0.82; letter-spacing: -0.05em; margin: 0; }
+  .vc-cover-rail hr { border: 0; border-top: 1px solid var(--vc-ink); margin: 0; width: 48px; }
+  .vc-cover-rail .meta-block { font-size: 9.5px; letter-spacing: 0.36em; text-transform: uppercase;
+    line-height: 1.8; color: var(--vc-muted); }
+  .vc-cover-rail .meta-block em { font-family: var(--vc-display); font-style: italic; font-size: 19px;
+    letter-spacing: 0.01em; text-transform: none; color: var(--vc-ink); display: block; margin-top: 6px; }
+  .vc-cover-rail .feature-list { font-size: 9.5px; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--vc-muted); line-height: 1.4; display: flex; flex-direction: column; gap: 2px; }
+  .vc-cover-rail .feature-list .head { margin-bottom: 8px; }
+  .vc-cover-rail .feature-list em { color: var(--vc-ink); font-style: italic;
+    font-family: var(--vc-display); font-size: 18px; text-transform: none; letter-spacing: 0.005em;
+    line-height: 1.3; padding: 6px 0; border-bottom: 1px solid var(--vc-rule); display: block; }
+  .vc-cover-rail .feature-list em:last-child { border-bottom: 0; }
+  .vc-cover-rail .feature-list em .pg { float: right; font-family: var(--vc-text); font-style: normal;
+    font-size: 10px; letter-spacing: 0.18em; color: var(--vc-muted); padding-top: 6px; }
+  .vc-cover-rubric { display: inline-flex; align-items: baseline; gap: 12px; font-size: 10px;
+    letter-spacing: 0.5em; text-transform: uppercase; color: var(--vc-oxblood); font-weight: 600; margin-bottom: 32px; }
+  .vc-cover-rubric::before { content: ""; width: 32px; height: 1px; background: var(--vc-oxblood); align-self: center; }
+  .vc-cover-h { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(54px, 7vw, 132px); line-height: 0.92; letter-spacing: -0.034em;
+    margin: 0 0 36px; color: var(--vc-ink); }
+  .vc-cover-h em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-cover-deck { font-family: var(--vc-display); font-size: clamp(20px, 1.8vw, 26px); font-style: italic;
+    line-height: 1.42; color: var(--vc-ink-2); margin: 0 0 44px; max-width: 640px;
+    padding-left: 28px; border-left: 1.5px solid var(--vc-oxblood); letter-spacing: 0.002em; }
+  .vc-cover-byline { font-size: 9.5px; letter-spacing: 0.36em; text-transform: uppercase;
+    color: var(--vc-muted); padding-top: 22px; border-top: 1px solid var(--vc-rule-2);
+    display: flex; gap: 44px; flex-wrap: wrap; }
+  .vc-cover-byline em { font-family: var(--vc-display); font-style: italic; font-size: 16px;
+    color: var(--vc-ink); letter-spacing: 0.01em; text-transform: none; display: block; margin-top: 6px; }
+
+  /* ===== FEATURE COLUMNS (Mission) ===== */
+  .vc-feat { padding: 96px 56px 104px; border-bottom: 1px solid var(--vc-rule-3); background: var(--vc-bone); }
+  .vc-feat-orn { max-width: 520px; margin: 0 auto 28px; }
+  .vc-feat-rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-oxblood); font-weight: 600; text-align: center; margin-bottom: 28px; }
+  .vc-feat-h { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(40px, 5vw, 80px); line-height: 0.98; letter-spacing: -0.022em;
+    margin: 0 auto 72px; text-align: center; max-width: 18ch; color: var(--vc-ink); }
+  .vc-feat-h em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-feat-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0;
+    border-top: 1px solid var(--vc-ink); max-width: 1180px; margin: 0 auto; }
+  .vc-feat-col { padding: 44px 36px 8px; border-right: 1px solid var(--vc-rule-2); position: relative; }
+  .vc-feat-col:last-child { border-right: 0; }
+  .vc-feat-col h3 { font-size: 9.5px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-oxblood); margin: 0 0 22px; font-weight: 600; }
+  .vc-feat-col h3 .roman { font-family: var(--vc-display); font-style: italic; font-size: 22px;
+    letter-spacing: 0; color: var(--vc-ink); margin-right: 10px; vertical-align: -2px; }
+  .vc-feat-col p { font-family: var(--vc-display); font-size: 20px; line-height: 1.48;
+    color: var(--vc-ink); margin: 0 0 16px; letter-spacing: 0.002em; }
+  .vc-feat-col p em { color: var(--vc-oxblood); font-style: italic; }
+  .vc-feat-col p.drop::first-letter {
+    font-family: var(--vc-display); font-style: italic; font-weight: 400;
+    font-size: 88px; float: left; line-height: 0.78;
+    padding: 8px 12px 0 0; color: var(--vc-oxblood);
+  }
+
+  /* ===== LETTER FROM THE FOUNDER ===== */
+  .vc-letter { padding: 120px 56px; background: var(--vc-bone); border-bottom: 1px solid var(--vc-rule-3); }
+  .vc-letter-grid { display: grid; grid-template-columns: 280px 1fr; gap: 80px; max-width: 1180px; margin: 0 auto; align-items: start; }
+  .vc-letter-side { display: flex; flex-direction: column; gap: 18px; padding-top: 8px; }
+  .vc-letter-rubric { font-size: 9.5px; letter-spacing: 0.5em; text-transform: uppercase; color: var(--vc-oxblood); font-weight: 600; }
+  .vc-letter-side .dept { font-family: var(--vc-display); font-style: italic; font-size: 28px; color: var(--vc-ink); line-height: 1.05; letter-spacing: -0.01em; margin: 0; }
+  .vc-letter-side .pg { font-size: 9.5px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--vc-muted); padding-top: 14px; margin-top: auto; border-top: 1px solid var(--vc-rule-2); }
+  .vc-letter-body { padding-left: 32px; border-left: 1px solid var(--vc-rule-2); }
+  .vc-letter-rubric-2 { font-size: 9.5px; letter-spacing: 0.42em; text-transform: uppercase; color: var(--vc-muted); margin-bottom: 14px; }
+  .vc-letter-body h2 { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(40px, 4.6vw, 64px); line-height: 1.0; letter-spacing: -0.024em;
+    margin: 0 0 28px; color: var(--vc-ink); }
+  .vc-letter-body h2 em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-letter-body p { font-family: var(--vc-display); font-size: 19px; line-height: 1.6;
+    color: var(--vc-ink); margin: 0 0 18px; max-width: 60ch; }
+  .vc-letter-body p.first::first-letter { font-family: var(--vc-display); font-style: italic;
+    font-weight: 400; font-size: 96px; float: left; line-height: 0.78;
+    padding: 10px 14px 0 0; color: var(--vc-oxblood); }
+  .vc-letter-body p em { color: var(--vc-oxblood); font-style: italic; }
+  .vc-letter-sign { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--vc-rule-2);
+    display: flex; flex-direction: column; gap: 6px; }
+  .vc-letter-sign .signature { font-family: "Cormorant Garamond", "Brush Script MT", cursive;
+    font-style: italic; font-size: 36px; color: var(--vc-oxblood); line-height: 1; letter-spacing: -0.01em; }
+  .vc-letter-sign .name-block { font-size: 9.5px; letter-spacing: 0.36em; text-transform: uppercase;
+    color: var(--vc-muted); margin-top: 6px; }
+  .vc-letter-sign .name-block em { font-family: var(--vc-display); font-style: italic; font-size: 14px;
+    color: var(--vc-ink); letter-spacing: 0.01em; text-transform: none; display: block; margin-top: 2px; }
+
+  /* ===== VALUES ===== */
+  .vc-values { padding: 96px 56px; background: var(--vc-ink); color: var(--vc-bone); border-bottom: 1px solid var(--vc-ink); }
+  .vc-values-head { display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+    max-width: 1180px; margin: 0 auto 64px; align-items: end; }
+  .vc-values-head .lhs .rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-gold-2); font-weight: 600; margin-bottom: 18px; display: block; }
+  .vc-values-head h2 { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(40px, 5.2vw, 88px); line-height: 0.96; letter-spacing: -0.022em;
+    margin: 0; color: var(--vc-bone); }
+  .vc-values-head h2 em { color: var(--vc-gold-2); font-style: italic; }
+  .vc-values-head .rhs { font-family: var(--vc-display); font-style: italic; font-size: 19px;
+    line-height: 1.5; color: rgba(244,238,226,0.72); padding-left: 28px;
+    border-left: 1px solid rgba(244,238,226,0.22); max-width: 48ch; }
+  .vc-values-list { max-width: 1180px; margin: 0 auto; border-top: 1px solid rgba(244,238,226,0.22); }
+  .vc-value-row { display: grid; grid-template-columns: 70px 1fr 1.6fr; gap: 40px;
+    padding: 32px 0; border-bottom: 1px solid rgba(244,238,226,0.14); align-items: baseline; }
+  .vc-value-row .num { font-family: var(--vc-display); font-style: italic; font-size: 30px;
+    color: var(--vc-gold-2); line-height: 1; letter-spacing: 0; }
+  .vc-value-row .name { font-family: var(--vc-display); font-size: 30px; line-height: 1.05;
+    color: var(--vc-bone); letter-spacing: -0.005em; }
+  .vc-value-row .body { font-family: var(--vc-text); font-size: 14px; line-height: 1.65;
+    color: rgba(244,238,226,0.78); max-width: 60ch; }
+
+  /* ===== PILLARS ===== */
+  .vc-pillars { padding: 104px 56px; background: var(--vc-bone-2); border-bottom: 1px solid var(--vc-rule-3); }
+  .vc-pillars-orn { max-width: 520px; margin: 0 auto 24px; }
+  .vc-pillars-rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-oxblood); margin-bottom: 18px; text-align: center; font-weight: 600; }
+  .vc-pillars-h { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(48px, 6.4vw, 104px); line-height: 0.94; letter-spacing: -0.026em;
+    margin: 0 auto 72px; text-align: center; color: var(--vc-ink); max-width: 17ch; }
+  .vc-pillars-h em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-pillars-grid { display: grid; grid-template-columns: repeat(5, 1fr);
+    border-top: 1.5px solid var(--vc-ink); border-bottom: 1.5px solid var(--vc-ink); background: var(--vc-bone);
+    max-width: 1320px; margin: 0 auto; }
+  .vc-pillar { padding: 36px 24px 32px; border-right: 1px solid var(--vc-rule-2);
+    display: flex; flex-direction: column; gap: 14px; min-height: 360px; }
+  .vc-pillar:last-child { border-right: 0; }
+  .vc-pillar .num { font-family: var(--vc-display); font-style: italic; font-size: 44px;
+    color: var(--vc-oxblood); line-height: 1; margin-bottom: 4px; letter-spacing: -0.01em; }
+  .vc-pillar .name { font-family: var(--vc-display); font-size: 30px; line-height: 1.02;
+    color: var(--vc-ink); letter-spacing: -0.008em; }
+  .vc-pillar .body { font-size: 13px; line-height: 1.6; color: var(--vc-ink-3); }
+  .vc-pillar .flag { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--vc-rule-2);
+    font-size: 9px; letter-spacing: 0.36em; text-transform: uppercase; color: var(--vc-muted); line-height: 1.6; }
+  .vc-pillar .flag em { font-family: var(--vc-display); font-style: italic; font-size: 16px;
+    color: var(--vc-oxblood); letter-spacing: 0.01em; text-transform: none; display: block; margin-top: 4px; }
+
+  /* ===== R246 ===== */
+  .vc-r246 { padding: 120px 56px; background: var(--vc-bone); border-bottom: 1px solid var(--vc-rule-3); }
+  .vc-r246-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 80px;
+    max-width: 1280px; margin: 0 auto; align-items: start; }
+  .vc-r246-rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-oxblood); font-weight: 600; margin-bottom: 18px; }
+  .vc-r246-h { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(56px, 8.4vw, 144px); line-height: 0.86; letter-spacing: -0.038em;
+    margin: 0 0 32px; color: var(--vc-ink); }
+  .vc-r246-h em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-r246-deck { font-family: var(--vc-display); font-size: clamp(19px, 1.8vw, 24px); font-style: italic;
+    line-height: 1.45; color: var(--vc-ink-2); margin: 0 0 36px; max-width: 56ch;
+    padding-left: 24px; border-left: 1.5px solid var(--vc-oxblood); }
+  .vc-r246-body { font-size: 14px; line-height: 1.7; color: var(--vc-ink-3); margin: 0 0 24px; max-width: 58ch; }
+  .vc-mech { background: var(--vc-ink); color: var(--vc-bone); padding: 48px 40px; position: sticky; top: 88px; }
+  .vc-mech .label { font-size: 9.5px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-gold-2); font-weight: 600; margin-bottom: 14px; }
+  .vc-mech .num { font-family: var(--vc-display); font-size: clamp(96px, 14vw, 168px);
+    line-height: 0.84; color: var(--vc-bone); margin: 4px 0 8px; letter-spacing: -0.04em; font-weight: 400; }
+  .vc-mech .num .t { color: var(--vc-gold-2); font-style: italic; }
+  .vc-mech .tag { font-family: var(--vc-display); font-style: italic; font-size: 19px;
+    color: var(--vc-gold-2); margin-bottom: 24px; letter-spacing: 0.01em; }
+  .vc-mech .body { font-size: 13.5px; line-height: 1.65; color: rgba(244,238,226,0.78); margin: 0 0 28px; }
+  .vc-mech hr { border: 0; border-top: 1px solid rgba(244,238,226,0.22); margin: 0 0 22px; }
+  .vc-mech .attr { display: flex; flex-direction: column; gap: 12px; margin-bottom: 0; }
+  .vc-mech .attr-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+  .vc-mech .attr-row dt { font-size: 9px; letter-spacing: 0.36em; text-transform: uppercase;
+    color: rgba(244,238,226,0.5); font-weight: 500; }
+  .vc-mech .attr-row dd { font-family: var(--vc-display); font-style: italic; font-size: 16px; color: var(--vc-gold-2); margin: 0; }
+
+  /* ===== R246 CTAs ===== */
+  .vc-r246-cta { display: flex; flex-direction: column; gap: 16px; align-items: flex-start;
+    padding-top: 24px; border-top: 1px solid var(--vc-rule-2); margin-top: 12px; }
+  .vc-cta-primary {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--vc-ink); color: var(--vc-bone);
+    padding: 14px 22px;
+    font-family: var(--vc-text); font-size: 10.5px;
+    letter-spacing: 0.32em; text-transform: uppercase; font-weight: 600;
+    transition: background .2s ease;
+  }
+  .vc-cta-primary:hover { background: var(--vc-oxblood); }
+  .vc-cta-primary span { transition: transform .2s ease; display: inline-block; }
+  .vc-cta-primary:hover span { transform: translateX(3px); }
+  .vc-cta-link {
+    font-family: var(--vc-display); font-style: italic;
+    font-size: 16px; color: var(--vc-muted);
+    border-bottom: 1px solid var(--vc-rule-2); padding-bottom: 2px;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .vc-cta-link em { color: var(--vc-oxblood); font-style: italic; }
+  .vc-cta-link:hover { color: var(--vc-ink); border-color: var(--vc-oxblood); }
+
+  /* ===== THE RECORD — Dispatches ===== */
+  .vc-record { padding: 120px 56px; background: var(--vc-bone-2); border-bottom: 1px solid var(--vc-rule-3); }
+  .vc-record-orn { max-width: 360px; margin: 0 auto 22px; }
+  .vc-record-rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-oxblood); font-weight: 600; text-align: center; margin-bottom: 18px; }
+  .vc-record-h { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(40px, 5vw, 76px); line-height: 0.96; letter-spacing: -0.022em;
+    margin: 0 auto 24px; text-align: center; color: var(--vc-ink); max-width: 18ch; }
+  .vc-record-h em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-record-intro { font-family: var(--vc-display); font-size: 19px; font-style: italic;
+    line-height: 1.5; color: var(--vc-ink-2); margin: 0 auto 64px;
+    max-width: 60ch; text-align: center; }
+  .vc-record-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr;
+    max-width: 1280px; margin: 0 auto;
+    border-top: 1.5px solid var(--vc-ink); border-bottom: 1.5px solid var(--vc-ink);
+    background: var(--vc-bone); }
+  .vc-record-card { padding: 36px 32px 32px; border-right: 1px solid var(--vc-rule-2);
+    display: flex; flex-direction: column; gap: 14px; min-height: 380px; }
+  .vc-record-card:last-child { border-right: 0; }
+  .vc-record-card .num { font-family: var(--vc-display); font-style: italic;
+    font-size: 36px; color: var(--vc-oxblood); line-height: 1; letter-spacing: -0.01em; }
+  .vc-record-card .kind { font-size: 9.5px; letter-spacing: 0.42em; text-transform: uppercase;
+    color: var(--vc-muted); font-weight: 600;
+    padding-bottom: 12px; border-bottom: 1px solid var(--vc-rule-2); }
+  .vc-record-card .title { font-family: var(--vc-display); font-weight: 400;
+    font-size: 32px; line-height: 1.05; color: var(--vc-ink);
+    letter-spacing: -0.012em; margin: 0; }
+  .vc-record-card.vc-record-lead .title { font-size: 44px; }
+  .vc-record-card .lede { font-family: var(--vc-display); font-size: 16px;
+    line-height: 1.55; color: var(--vc-ink-3); margin: 0; }
+  .vc-record-card .link { margin-top: auto; padding-top: 14px;
+    font-family: var(--vc-text); font-size: 10px; letter-spacing: 0.42em;
+    text-transform: uppercase; color: var(--vc-oxblood); font-weight: 600;
+    border-top: 1px solid var(--vc-rule-2);
+    display: inline-flex; align-items: center; gap: 12px;
+    transition: color .2s ease; }
+  .vc-record-card .link:hover { color: var(--vc-ink); }
+  .vc-record-card .link span { transition: transform .2s ease; display: inline-block; }
+  .vc-record-card .link:hover span { transform: translateX(4px); }
+
+  /* ===== PULL QUOTE ===== */
+  .vc-pull { padding: 144px 56px; text-align: center; background: var(--vc-oxblood-2);
+    color: var(--vc-bone); border-bottom: 1px solid var(--vc-ink); position: relative; overflow: hidden; }
+  .vc-pull::before { content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 30% 30%, rgba(168,136,74,0.12), transparent 55%),
+      radial-gradient(ellipse at 70% 70%, rgba(109,31,32,0.55), transparent 60%); pointer-events: none; }
+  .vc-pull-inner { position: relative; z-index: 1; max-width: 1080px; margin: 0 auto; }
+  .vc-pull-orn { max-width: 360px; margin: 0 auto 28px; color: rgba(244,238,226,0.32); }
+  .vc-pull-orn .mk { color: var(--vc-gold-2); }
+  .vc-pull-rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-gold-2); margin-bottom: 36px; font-weight: 600; }
+  .vc-pull blockquote { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(36px, 5vw, 76px); line-height: 1.12; letter-spacing: -0.018em;
+    margin: 0 auto; font-style: italic; }
+  .vc-pull blockquote em { color: var(--vc-gold-2); font-style: italic; }
+  .vc-pull-cite { margin-top: 40px; font-size: 10px; letter-spacing: 0.5em;
+    text-transform: uppercase; color: rgba(244,238,226,0.55); font-weight: 500; }
+
+  /* ===== CONTRIBUTORS ===== */
+  .vc-contrib { padding: 88px 56px; background: var(--vc-bone-2); border-bottom: 1px solid var(--vc-rule-3); }
+  .vc-contrib-orn { max-width: 360px; margin: 0 auto 22px; }
+  .vc-contrib-rubric { font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-oxblood); margin-bottom: 16px; text-align: center; font-weight: 600; }
+  .vc-contrib-h { font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(36px, 4vw, 56px); line-height: 1.0; letter-spacing: -0.022em;
+    margin: 0 auto 56px; text-align: center; color: var(--vc-ink); max-width: 22ch; }
+  .vc-contrib-h em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-contrib-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    max-width: 1180px; margin: 0 auto;
+    border-top: 1px solid var(--vc-ink); border-bottom: 1px solid var(--vc-ink); }
+  .vc-contrib-col { padding: 28px 24px; border-right: 1px solid var(--vc-rule-2);
+    display: flex; flex-direction: column; gap: 10px; }
+  .vc-contrib-col:last-child { border-right: 0; }
+  .vc-contrib-col h4 { font-size: 9.5px; letter-spacing: 0.42em; text-transform: uppercase;
+    color: var(--vc-oxblood); margin: 0 0 10px; font-weight: 600;
+    padding-bottom: 8px; border-bottom: 1px solid var(--vc-rule-2); }
+  .vc-contrib-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+  .vc-contrib-col li { font-family: var(--vc-display); font-style: italic; font-size: 16px;
+    color: var(--vc-ink); letter-spacing: 0.005em; line-height: 1.4; }
+  .vc-contrib-col li small { display: block; font-family: var(--vc-text); font-style: normal;
+    font-size: 9.5px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--vc-muted); margin-top: 2px; font-weight: 500; }
+
+  /* ===== FOOTER ===== */
+  .vc-foot { padding: 80px 56px 40px; background: var(--vc-bone); }
+  /* Footer sister mark — concentric mesh seal */
+  .vc-foot-seal {
+    text-align: center;
+    margin: 0 auto 56px;
+    max-width: 320px;
+  }
+  /* mesh draw-in (triggers when .reveal becomes .in via IntersectionObserver) */
+  .vc-foot-seal-svg .mesh-poly {
+    stroke-dasharray: 720;
+    stroke-dashoffset: 720;
+    transition: stroke-dashoffset 1.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  }
+  .vc-foot-seal-svg .mesh-spoke {
+    stroke-dasharray: 110;
+    stroke-dashoffset: 110;
+    transition: stroke-dashoffset 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .vc-foot-seal.in .mesh-poly { stroke-dashoffset: 0; }
+  .vc-foot-seal.in .mesh-spoke { stroke-dashoffset: 0; }
+  .vc-foot-seal.in .mesh-spoke:nth-of-type(1) { transition-delay: 0.45s; }
+  .vc-foot-seal.in .mesh-spoke:nth-of-type(2) { transition-delay: 0.55s; }
+  .vc-foot-seal.in .mesh-spoke:nth-of-type(3) { transition-delay: 0.65s; }
+  .vc-foot-seal.in .mesh-spoke:nth-of-type(4) { transition-delay: 0.75s; }
+  .vc-foot-seal.in .mesh-spoke:nth-of-type(5) { transition-delay: 0.85s; }
+  .vc-foot-seal.in .mesh-spoke:nth-of-type(6) { transition-delay: 0.95s; }
+  /* node pulse — staggered wave around the ring */
+  @keyframes meshPulse {
+    0%, 100% { opacity: 1; r: 3.5; }
+    50%      { opacity: 0.55; r: 4.4; }
+  }
+  .vc-foot-seal.in .mesh-node-active {
+    animation: meshPulse 3.4s ease-in-out infinite;
+    animation-delay: 1.2s;
+  }
+  .vc-foot-seal.in .mesh-node-active:nth-of-type(1) { animation-delay: 1.20s; }
+  .vc-foot-seal.in .mesh-node-active:nth-of-type(2) { animation-delay: 1.45s; }
+  .vc-foot-seal.in .mesh-node-active:nth-of-type(3) { animation-delay: 1.70s; }
+  .vc-foot-seal.in .mesh-node-active:nth-of-type(4) { animation-delay: 1.95s; }
+  .vc-foot-seal.in .mesh-node-active:nth-of-type(5) { animation-delay: 2.20s; }
+  .vc-foot-seal.in .mesh-node-active:nth-of-type(6) { animation-delay: 2.45s; }
+  @media (prefers-reduced-motion: reduce) {
+    .vc-foot-seal-svg .mesh-poly,
+    .vc-foot-seal-svg .mesh-spoke {
+      stroke-dasharray: none; stroke-dashoffset: 0; transition: none;
+    }
+    .vc-foot-seal.in .mesh-node-active { animation: none; }
+  }
+  .vc-foot-seal-svg {
+    width: 100%; height: auto;
+    max-width: 240px; display: block;
+    margin: 0 auto 22px;
+  }
+  .vc-foot-seal-name {
+    font-family: var(--vc-text);
+    font-size: 11px;
+    letter-spacing: 0.62em;
+    text-transform: uppercase;
+    color: var(--vc-ink);
+    font-weight: 600;
+    padding-left: 0.62em;
+  }
+  .vc-foot-seal-sub {
+    font-family: var(--vc-display);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--vc-muted);
+    margin-top: 8px;
+    letter-spacing: 0.02em;
+  }
+  .vc-foot-grid { display: grid; grid-template-columns: 1.2fr repeat(4, 1fr); gap: 36px;
+    padding-top: 32px; border-top: 1.5px solid var(--vc-ink); max-width: 1280px; margin: 0 auto; }
+  .vc-foot-grid .colophon { font-family: var(--vc-display); font-style: italic; font-size: 16px;
+    line-height: 1.55; color: var(--vc-ink-3); max-width: 28ch; }
+  .vc-foot-grid .colophon strong { font-style: normal; font-family: var(--vc-text); font-size: 9.5px;
+    letter-spacing: 0.42em; text-transform: uppercase; color: var(--vc-oxblood); font-weight: 600;
+    display: block; margin-bottom: 12px; }
+  .vc-foot-grid h4 { font-size: 9.5px; letter-spacing: 0.42em; text-transform: uppercase;
+    color: var(--vc-oxblood); margin: 0 0 14px; font-weight: 600; }
+  .vc-foot-grid ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+  .vc-foot-grid a { color: var(--vc-ink); font-size: 16px; font-family: var(--vc-display); font-style: italic; letter-spacing: 0.005em; transition: color .2s ease; }
+  .vc-foot-grid a:hover { color: var(--vc-oxblood); }
+  .vc-foot-fine { margin: 48px auto 0; max-width: 1280px; padding-top: 24px;
+    border-top: 1px solid var(--vc-rule-2); display: flex; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px; font-size: 9px; letter-spacing: 0.36em;
+    text-transform: uppercase; color: var(--vc-muted); }
+  .vc-foot-fine em { font-family: var(--vc-display); font-style: italic; font-size: 13px;
+    color: var(--vc-ink); letter-spacing: 0.01em; text-transform: none; }
+
+  /* ===== Reveal on scroll ===== */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1100px) {
+    .vc-cover { grid-template-columns: 1fr; gap: 40px; padding: 56px 32px 64px; }
+    .vc-feat-cols { grid-template-columns: 1fr; }
+    .vc-feat-col { border-right: 0; border-bottom: 1px solid var(--vc-rule-2); }
+    .vc-feat-col:last-child { border-bottom: 0; }
+    .vc-letter-grid { grid-template-columns: 1fr; gap: 32px; }
+    .vc-letter-body { padding-left: 0; border-left: 0; padding-top: 24px; border-top: 1px solid var(--vc-rule-2); }
+    .vc-values-head { grid-template-columns: 1fr; gap: 28px; }
+    .vc-values-head .rhs { padding-left: 0; border-left: 0; padding-top: 18px; border-top: 1px solid rgba(244,238,226,0.22); }
+    .vc-pillars-grid { grid-template-columns: 1fr 1fr; }
+    .vc-pillar { border-bottom: 1px solid var(--vc-rule-2); }
+    .vc-pillar:nth-child(2n) { border-right: 0; }
+    .vc-r246-grid { grid-template-columns: 1fr; gap: 40px; }
+    .vc-mech { position: static; }
+    .vc-record-grid { grid-template-columns: 1fr 1fr; }
+    .vc-record-card:nth-child(2n) { border-right: 0; }
+    .vc-record-card { border-bottom: 1px solid var(--vc-rule-2); }
+    .vc-contrib-grid { grid-template-columns: 1fr 1fr; }
+    .vc-contrib-col { border-bottom: 1px solid var(--vc-rule-2); }
+    .vc-contrib-col:nth-child(2n) { border-right: 0; }
+    .vc-foot-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 720px) {
+    .vc-masthead { padding: 48px 24px 0; }
+    .vc-masthead-corners { position: static; flex-direction: row; justify-content: space-between; padding-bottom: 24px; }
+    .vc-foundation { padding: 44px 24px 36px; margin: 0 -24px; }
+    .vc-foundation-mark { letter-spacing: 0.28em; padding-left: 0.28em; }
+    .vc-foundation::before { top: 14px; }
+    .vc-foundation::after { bottom: 14px; }
+    .vc-foundation-meta { letter-spacing: 0.32em; font-size: 9px; }
+    .vc-nav { gap: 16px; padding: 14px 20px; font-size: 9.5px; letter-spacing: 0.28em; }
+    .vc-nav .sep { display: none; }
+    .vc-cover, .vc-feat, .vc-letter, .vc-values, .vc-pillars, .vc-r246, .vc-pull, .vc-record, .vc-contrib, .vc-foot {
+      padding-left: 24px; padding-right: 24px;
+    }
+    .vc-record { padding-top: 64px; padding-bottom: 64px; }
+    .vc-record-grid { grid-template-columns: 1fr; }
+    .vc-record-card { border-right: 0; border-bottom: 1px solid var(--vc-rule-2); min-height: auto; }
+    .vc-record-card:last-child { border-bottom: 0; }
+    .vc-cover { padding-top: 48px; padding-bottom: 56px; }
+    .vc-feat { padding-top: 64px; padding-bottom: 64px; }
+    .vc-letter { padding-top: 64px; padding-bottom: 64px; }
+    .vc-values { padding-top: 64px; padding-bottom: 64px; }
+    .vc-pillars { padding-top: 72px; padding-bottom: 72px; }
+    .vc-r246 { padding-top: 72px; padding-bottom: 72px; }
+    .vc-pull { padding-top: 88px; padding-bottom: 88px; }
+    .vc-contrib { padding-top: 64px; padding-bottom: 64px; }
+    .vc-pillars-grid { grid-template-columns: 1fr; }
+    .vc-pillar { border-right: 0; }
+    .vc-value-row { grid-template-columns: 50px 1fr; gap: 18px; }
+    .vc-value-row .body { grid-column: 1 / -1; padding-left: 50px; }
+    .vc-contrib-grid { grid-template-columns: 1fr; }
+    .vc-contrib-col { border-right: 0; }
+    .vc-foot-grid { grid-template-columns: 1fr; }
+    .vc-foot-fine { flex-direction: column; align-items: center; text-align: center; }
+  }
 </style>
 </head>
 <body>
-<div class="issuebar"><a href="#mission">Founding Framework</a><div class="center">E5 ENCLAVE</div><div class="right">Liberty City · Miami · May 2026</div><div id="progress-bar"></div></div>
-<header class="mast"><div class="kicker">Coalition of the Willing · Juneteenth Rollout</div><h1>E5</h1><p class="deck">A Black-led civic intelligence, coalition, and institution-building platform turning scattered community effort into coordinated lineage power.</p><nav class="nav"><a class="primary" href="#join">Join the Coalition</a><a href="#pillars">Five Pillars</a><a href="#restitution">Restitution 246</a><a href="#coalition-mesh">Coalition Mesh</a></nav></header>
-<main>
-<section class="hero wrap"><div class="hero-copy"><div class="kicker">Editorial Founding Issue</div><h2 class="hero-title">We turn scattered community effort into <em>coordinated lineage power.</em></h2><p class="lede">Based in Liberty City, Miami, E5 is dedicated to strengthening the social, economic, educational, environmental, civic, and emancipated future of the lineage.</p><p class="small">The lineage refers to Black American descendants of chattel slavery and the communities shaped by that inheritance.</p></div><aside class="hero-aside"><div><div class="aside-label">Institutional Foundation</div><div class="aside-big">501(c)(3)</div><p>Florida nonprofit status, EIN 99-3822441, public charity classification, federal registration, and a live application platform.</p></div><div><div class="rule"></div><p class="aside-label">Founding Juneteenth · June 19, 2026</p></div></aside></section>
-<section class="mantra"><div><span class="num">01</span><h3>E5 is the platform.</h3></div><div><span class="num">02</span><h3>The Coalition is the network.</h3></div><div><span class="num">03</span><h3>The Five Pillars are the doctrine.</h3></div><div><span class="num">04</span><h3>The flagship projects are the proof.</h3></div></section>
-<section class="section wrap" id="mission"><div class="section-head"><div class="num">Mission</div><h2>A Think Tank convening <em>Coalitions of the Willing.</em></h2></div><div class="grid2"><article class="card"><span class="num">Mission Statement</span><h3>Institutional Mission</h3><p>E5 Enclave is a Think Tank convening Coalitions of the Willing to build the institutions, evidence systems, collaborative platforms, and community projects needed to advance the social, economic, educational, environmental, civic, and emancipated future of the lineage.</p><p>Through research, public education, technology-enabled coordination, coalition fundraising, and project incubation, E5 supports organizations and leaders working to repair inherited harm and build durable Black-led institutions.</p></article><article class="card red"><span class="num" style="color:#f6d388">Public Mission</span><h3>The Public Call</h3><p>E5 builds Coalitions of the Willing — organizations, builders, educators, farmers, technologists, advocates, and community leaders working together to strengthen the future of the lineage.</p><p>From Liberty City to the nation, E5 exists to build the evidence, institutions, farms, schools, businesses, media, and policy tools our communities need to repair, rise, and govern their future.</p></article></div></section>
-<section class="section wrap" id="structure"><div class="section-head"><div class="num">Structure</div><h2>Five things <em>at once.</em></h2></div><div class="grid5"><article class="card"><span class="num">01</span><h3>Think Tank</h3><p>Research, policy frameworks, public records, reparative models, and civic intelligence.</p></article><article class="card"><span class="num">02</span><h3>Coalition Platform</h3><p>Collaboration among aligned member organizations without absorbing or replacing them.</p></article><article class="card"><span class="num">03</span><h3>Project Incubator</h3><p>Flagship initiatives across education, agriculture, economics, civic engagement, and restitution.</p></article><article class="card"><span class="num">04</span><h3>Technology-Enabled Nonprofit</h3><p>AI-assisted workflows, data tools, and digital infrastructure producing institutional-scale output from a lean team.</p></article><article class="card"><span class="num">05</span><h3>Institution-Building Vehicle</h3><p>Durable systems designed to outlast campaigns, personalities, and temporary funding cycles.</p></article></div></section>
-<section class="section wrap"><div class="section-head"><div class="num">Leadership</div><h2>Governance with <em>discipline.</em></h2></div><div class="grid3"><article class="card"><h3>Core Group</h3><p>Founding strategic body responsible for mission discipline, major decisions, coalition approvals, public rollout, and long-range direction.</p></article><article class="card"><h3>Operations Team</h3><p>Administrative and execution body responsible for compliance, fundraising operations, communications, reporting, platform maintenance, partner coordination, and tracking.</p></article><article class="card"><h3>Advisory Council</h3><p>Elders, educators, attorneys, organizers, policy thinkers, technologists, farmers, health experts, and community leaders strengthening the work.</p></article></div></section>
-<section class="section wrap"><div class="section-head"><div class="num">Operating Model</div><h2>33 / 17 / 50</h2></div><div class="grid3"><article class="card dark"><h3>33%</h3><p>E5 Enclave Operations: platform administration, technology, compliance, communications, reporting, fundraising management, and operational continuity.</p></article><article class="card"><h3>17%</h3><p>Shared Community-Building Projects that benefit the broader coalition and community ecosystem.</p></article><article class="card red"><h3>50%</h3><p>Member Organization Distribution according to written campaign agreements, contribution levels, project roles, and approved coalition terms.</p></article></div><p class="small" style="margin-top:18px">No coalition campaign should move forward without clear participating organizations, revenue allocation rules, reporting expectations, compliance review, and public messaging.</p></section>
-<section class="section wrap pillars" id="pillars"><div class="section-head"><div class="num">The Five Pillars</div><h2>The structure of the harm is the <em>structure of the remedy.</em></h2></div><div class="grid5"><article class="card"><span class="num">01</span><h3>Environmental</h3><p>Food sovereignty, land stewardship, agriculture, fresh food access, and anti-food-apartheid infrastructure.</p><p><b>Lineage Farms</b> and <b>FarmBlock</b> anchor this lane.</p></article><article class="card"><span class="num">02</span><h3>Economic</h3><p>Business formation, entrepreneurship, government contracting, cooperative ownership, circular economics, mutual aid, bail support, workforce development, and community capital.</p></article><article class="card"><span class="num">03</span><h3>Educational</h3><p>Private education models, STEM, emerging technologies, leadership development, maternal and natal health systems, and lineage-centered curriculum.</p></article><article class="card"><span class="num">04</span><h3>Engagement</h3><p>Nonpartisan civic education, public policy education, media, storytelling, issue advocacy, and community mobilization.</p></article><article class="card"><span class="num">05</span><h3>Emancipated</h3><p>The unfinished obligations of freedom. Establishing what was promised and repairing what was denied.</p></article><article class="card emancipated"><div><span class="num" style="color:#f6d388">Doctrinal Cadence</span><h3>Emancipated</h3><p>The issue is not whether emancipation occurred. The issue is whether the obligations created by emancipation were ever fulfilled.</p></div><div class="cadence"><p>Emancipation created obligations.</p><p>Those obligations were broken.</p><p>Broken obligations can be documented.</p><p>Documented obligations can become policy.</p><p>Policy can become remedy.</p></div></article></div></section>
-<section class="section wrap" id="flagships"><div class="section-head"><div class="num">Flagship Projects</div><h2>The proof case.</h2></div><div class="grid3"><article class="card"><span class="num">Educational</span><h3>McCartney Academy</h3><p>A proposed private educational institution, preparatory model, or boarding school concept focused on STEM, emerging technology, civic leadership, maternal and natal health education, and community excellence.</p></article><article class="card"><span class="num">Environmental</span><h3>Lineage Farms / FarmBlock</h3><p>Two complementary models for food sovereignty: commercial food production at scale and localized microfarming to counter food deserts.</p></article><article class="card dark"><span class="num" style="color:#f6d388">Emancipated</span><h3>Restitution 246</h3><p>E5’s wage-loss and opportunity-loss framework for the 246 years of stolen labor endured by the lineage under American chattel slavery.</p></article></div></section>
-<section class="section wrap" id="restitution"><div class="section-head"><div class="num">Restitution 246</div><h2>A disciplined lane.</h2></div><div class="grid2"><article><div class="money">$120T</div><p class="lede">A federal restitution mechanism structured around a $120 trillion bond, held in perpetuity, with interest payments directed to the lineage as partial restitution for lost wages and inherited loss of opportunity.</p><p>It is not full reparations. It is not compensation for pain and suffering. It is not the total settlement of Black harm in America. It is a wage-loss and opportunity-loss framework.</p></article><article class="card"><span class="num">The Five Questions</span><div class="questions"><p>Is it a crime against humanity for one person to own another person?</p><p>Should a government make laws that allow one citizen to own another?</p><p>If the government makes laws that allow one citizen to own another citizen, is that government responsible for the damage to the enslaved citizens?</p><p>What’s the number?</p><p>Who is eligible?</p></div></article></div><p class="small">This is civic education and policy analysis, not partisan campaign activity. The Lineage Foundation — Think Tank serves as the institutional container for this research, policy development, public education, and long-term reparative framework.</p></section>
-<section class="section wrap" id="juneteenth"><div class="section-head"><div class="num">Juneteenth Rollout</div><h2>Public emergence moment.</h2></div><div class="grid3"><article class="card"><h3>E5 Enclave Incorporated</h3><p>A Black-led civic intelligence, coalition, and institution-building platform based in Liberty City, Miami.</p></article><article class="card"><h3>The Coalition</h3><p>A network of aligned organizations, builders, educators, farmers, technologists, advocates, and community leaders.</p></article><article class="card red"><h3>The Public Call</h3><p>An invitation to join the coalition and help build the institutions the lineage requires.</p></article></div></section>
-<section class="mesh-section" id="coalition-mesh"><div class="wrap"><div class="section-head"><div class="num">Coalition Mesh</div><h2>A network, <em>not a hierarchy.</em></h2></div><div class="mesh-wrap"><div class="mesh-legend"><div class="item"><span class="dot filled"></span> E5 programs</div><div class="item"><span class="dot outlined"></span> Coalition partners</div><div class="item"><span class="dot dashed"></span> Open seats</div></div><svg id="mesh-svg" class="mesh-svg" role="img" aria-label="Coalition mesh visualization showing E5 Enclave as the anchor node connected to programs, partner nodes, and open seats"></svg><div class="mesh-fallback" id="mesh-fallback"><p><b>Coalition Mesh</b><br>E5 Enclave anchors a network of programs, partners, and open seats.</p></div><div id="mesh-tooltip" class="mesh-tooltip"><div class="name"></div><div class="role"></div><a class="tt-link" href="#" target="_blank" rel="noopener noreferrer"></a></div><button id="mesh-recenter" class="mesh-recenter" aria-label="Re-center coalition mesh">Re-center</button></div></div></section>
-<section class="section wrap" id="coalition"><div class="section-head"><div class="num">Coalition Directory</div><h2>The directory behind the <em>network.</em></h2></div><div class="directory"><div class="org e5"><span class="num" style="color:#f6d388">E5 Vehicle</span><h4>McCartney Academy</h4><a href="#">Backlink pending</a></div><div class="org e5"><span class="num" style="color:#f6d388">E5 Vehicle</span><h4>FarmBlock</h4><a href="https://farmblock.vip">Visit site</a></div><div class="org e5"><span class="num" style="color:#f6d388">Campaign</span><h4>Restitution 246</h4><a href="https://restitution246.com">Visit site</a></div><div class="org e5"><span class="num" style="color:#f6d388">Platform</span><h4>IAMGODIAM</h4><a href="https://iamgodiam.com">Visit site</a></div><div class="org open"><span class="num">Open Seat</span><h4>Coalition Partner</h4><a href="#join">Apply to join</a></div><div class="org open"><span class="num">Open Seat</span><h4>Coalition Partner</h4><a href="#join">Apply to join</a></div><div class="org open"><span class="num">Open Seat</span><h4>Coalition Partner</h4><a href="#join">Apply to join</a></div><div class="org open"><span class="num">Open Seat</span><h4>Coalition Partner</h4><a href="#join">Apply to join</a></div></div></section>
-<section style="background:var(--night);border-bottom:1px solid var(--red2);" id="join"><div class="cta-inner"><span class="kicker" style="color:var(--gold);">Open Coalition</span><h2 style="font-family:'Cormorant Garamond',Georgia,serif;color:var(--paper);font-size:clamp(44px,6vw,92px);line-height:.88;margin:.5rem 0 1.5rem;letter-spacing:-.04em;">Four Seats. One Movement.</h2><p class="lede" style="color:var(--hair2);max-width:620px;margin:0 auto 2rem;">E5 Enclave is actively building its founding coalition. If your organization is ready to move with structural intent, apply for one of four open coalition seats.</p><form class="join-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"><input type="email" name="email" placeholder="Organization email" required><input type="text" name="org" placeholder="Organization name" required><button type="submit">Request a Seat</button></form><p class="small" style="color:var(--muted);margin-top:1rem;">Coalition seats are selective and mission-aligned. We review applications on a rolling basis.</p></div></section>
-<section class="closing"><p>The record must be built.<br>The institutions must be built.<br>The coalition must be built.<br><em>The harm was structural. The remedy must be structural.</em><br>A record built is a remedy made possible.</p></section>
+<a href="#main" class="vc-skip">Skip to content</a>
+<main id="main">
+
+<header class="vc-masthead">
+  <div class="vc-masthead-corners">
+    <span class="l">Established<br/><em>Liberty City</em></span>
+    <span class="r">Eden Launch<br/><em>17 February 2027</em></span>
+  </div>
+  <div class="vc-crest" role="img" aria-label="E5 Enclave">
+    <svg viewBox="0 0 540 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+      <line x1="60" y1="56" x2="230" y2="56" stroke="#0a0908" stroke-width="0.8" opacity="0.4"/>
+      <text x="270" y="65" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="22" font-style="italic" fill="#6d1f20">✦</text>
+      <line x1="310" y1="56" x2="480" y2="56" stroke="#0a0908" stroke-width="0.8" opacity="0.4"/>
+      <text x="270" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" letter-spacing="7" font-weight="600" fill="#0a0908">FOUNDED MMXXVI · LIBERTY CITY</text>
+      <text x="270" y="270" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="500" fill="#0a0908">
+        <tspan font-size="220">E</tspan>
+        <tspan font-size="170" font-style="italic" fill="#6d1f20" dx="-12" dy="-18">5</tspan>
+      </text>
+      <line x1="90" y1="306" x2="240" y2="306" stroke="#6d1f20" stroke-width="0.9"/>
+      <circle cx="270" cy="306" r="2.5" fill="#6d1f20"/>
+      <line x1="300" y1="306" x2="450" y2="306" stroke="#6d1f20" stroke-width="0.9"/>
+      <text x="270" y="338" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="17" font-style="italic" fill="#6b6457" letter-spacing="0.5">— A Lineage-based Think Tank —</text>
+    </svg>
+  </div>
+  <div class="vc-foundation">
+    <h1 class="vc-foundation-mark">ENCLAVE</h1>
+    <div class="vc-foundation-credo">A Lineage-based Think Tank<span class="dot">·</span>comprised of a Coalition of the Willing.</div>
+    <div class="vc-foundation-meta">Founded Juneteenth · MMXXVI · Liberty City</div>
+  </div>
+</header>
+
+<nav class="vc-nav">
+  <a href="#doctrine">Doctrine</a><span class="sep"></span>
+  <a href="#pillars">Pillars</a><span class="sep"></span>
+  <a href="#record">The Record</a><span class="sep"></span>
+  <a href="#restitution">Restitution 246</a><span class="sep"></span>
+  <a href="#coalition">Coalition</a><span class="sep"></span>
+  <a href="#join">Join</a>
+</nav>
+
+<section class="vc-cover">
+  <aside class="vc-cover-rail">
+    <div class="vol">N°<br/>01</div>
+    <hr/>
+    <div class="meta-block">From Liberty City<br/><em>To the Nation</em></div>
+    <hr/>
+    <div class="feature-list">
+      <span class="head">In this issue</span>
+      <a href="https://sue-app-ec34c434.base44.app/DocParallelNegros" target="_blank" rel="noopener"><em>Parallel Negros <span class="pg">№ I</span></em></a>
+      <a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener"><em>Measure the Wound <span class="pg">№ II</span></em></a>
+      <a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener"><em>Restitution 246 <span class="pg">№ III</span></em></a>
+      <a href="#pillars"><em>The Five Pillars <span class="pg">p. 32</span></em></a>
+      <a href="#coalition"><em>The Coalition <span class="pg">p. 58</span></em></a>
+    </div>
+  </aside>
+  <div class="vc-cover-main reveal">
+    <div class="vc-cover-rubric">The Founding Address</div>
+    <h2 class="vc-cover-h">We turn scattered<br/>community effort<br/>into <em>coordinated</em><br/><em>lineage</em> power.</h2>
+    <p class="vc-cover-deck">A Lineage-based Think Tank comprised of a Coalition of the Willing — convening builders, educators, farmers, technologists, advocates, and community leaders to repair, rise, and govern the lineage&rsquo;s future.</p>
+    <div class="vc-cover-byline">
+      <span>Issued by<br/><em>The Enclave</em></span>
+      <span>Convened in<br/><em>Liberty City</em></span>
+      <span>Set in<br/><em>Cormorant Garamond</em></span>
+      <span>Printed for<br/><em>The Coalition</em></span>
+    </div>
+  </div>
+</section>
+
+<section class="vc-feat" id="doctrine">
+  <div class="vc-feat-orn vc-orn-rule reveal"><span class="mk">§</span></div>
+  <div class="vc-feat-rubric reveal">A Coalition of the Willing</div>
+  <h2 class="vc-feat-h reveal">Two missions, <em>one lineage.</em></h2>
+  <div class="vc-feat-cols reveal">
+    <div class="vc-feat-col">
+      <h3><span class="roman">I.</span>The Mission of Record</h3>
+      <p class="drop">E5 Enclave is a Lineage-based Think Tank convening a Coalition of the Willing to build the institutions, evidence systems, collaborative platforms, and community projects needed to advance the future of <em>the lineage</em>.</p>
+    </div>
+    <div class="vc-feat-col">
+      <h3><span class="roman">II.</span>The Public Mission</h3>
+      <p class="drop">From Liberty City to the nation, E5 builds the evidence, institutions, farms, schools, businesses, media, and policy tools our communities need to <em>repair, rise, and govern</em> their future.</p>
+    </div>
+    <div class="vc-feat-col">
+      <h3><span class="roman">III.</span>The Method</h3>
+      <p class="drop">Operated by an <em>agentic-first staff</em> &mdash; AI agents under human direction &mdash; producing institutional-scale output from a deliberately lean operating team built to outlast cycles.</p>
+    </div>
+  </div>
+</section>
+
+<section class="vc-letter">
+  <div class="vc-letter-grid">
+    <aside class="vc-letter-side reveal">
+      <span class="vc-letter-rubric">Department No 02</span>
+      <h3 class="dept">Letter from the Founder</h3>
+      <span class="pg">Folio · p. 06</span>
+    </aside>
+    <div class="vc-letter-body reveal">
+      <div class="vc-letter-rubric-2">— A note to the lineage —</div>
+      <h2>This is not a campaign. It is <em>a record being built.</em></h2>
+      <p class="first">For three centuries the obligations of emancipation went unrecorded &mdash; not because they were unknown, but because the architecture of remedy was never built. E5 Enclave is the architecture. The Coalition is the network. The Five Pillars are the doctrine. The projects are the proof.</p>
+      <p>We do not promise a finish line. We promise <em>discipline of scope</em> &mdash; naming precisely what we are doing, and what we are not. We promise coordination over competition. We promise that what is measured cannot be dismissed.</p>
+      <p>The center holds. The work begins.</p>
+      <div class="vc-letter-sign">
+        <span class="signature">Israel Lee</span>
+        <span class="name-block">Chairman<em>E5 Enclave Incorporated</em></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vc-values">
+  <div class="vc-values-head reveal">
+    <div class="lhs">
+      <span class="rubric">The Doctrine — V Tenets</span>
+      <h2>What E5 <em>is.</em></h2>
+    </div>
+    <div class="rhs">
+      Five institutional values. The center holds. Each tenet is published openly and audited against practice, in the manner of any standing institution worthy of its charter.
+    </div>
+  </div>
+  <div class="vc-values-list reveal">
+    <div class="vc-value-row">
+      <span class="num">i.</span>
+      <span class="name">Empirical Integrity</span>
+      <span class="body">Decisions grounded in dual-source-verified evidence. What is measured cannot be dismissed.</span>
+    </div>
+    <div class="vc-value-row">
+      <span class="num">ii.</span>
+      <span class="name">Sovereign Capacity</span>
+      <span class="body">Communities own their data, their institutions, and their futures. We coordinate; we do not absorb.</span>
+    </div>
+    <div class="vc-value-row">
+      <span class="num">iii.</span>
+      <span class="name">Black-First</span>
+      <span class="body">Built by and for the lineage. Coalition allies strengthen the work. The center holds.</span>
+    </div>
+    <div class="vc-value-row">
+      <span class="num">iv.</span>
+      <span class="name">Radical Transparency</span>
+      <span class="body">Substantial research published openly. Operating model in plain language. Records made public.</span>
+    </div>
+    <div class="vc-value-row">
+      <span class="num">v.</span>
+      <span class="name">Intergenerational Accountability</span>
+      <span class="body">Built for the people who will inherit it. We are stewards, not owners.</span>
+    </div>
+  </div>
+</section>
+
+<section class="vc-pillars" id="pillars">
+  <div class="vc-pillars-orn vc-orn-rule reveal"><span class="mk">✦</span></div>
+  <div class="vc-pillars-rubric reveal">The Five Pillars</div>
+  <h2 class="vc-pillars-h reveal">The structure of the harm is the structure of the <em>remedy.</em></h2>
+  <div class="vc-pillars-grid reveal">
+    <div class="vc-pillar">
+      <div class="num">i.</div>
+      <div class="name">Environmental</div>
+      <div class="body">Food sovereignty, land stewardship, agriculture, and anti-food-apartheid infrastructure.</div>
+      <div class="flag">Flagship<em>Lineage Farms · FarmBlock</em></div>
+    </div>
+    <div class="vc-pillar">
+      <div class="num">ii.</div>
+      <div class="name">Economic</div>
+      <div class="body">Business formation, government contracting, cooperative ownership, and circular economics.</div>
+      <div class="flag">Doctrine<em>From survival to power</em></div>
+    </div>
+    <div class="vc-pillar">
+      <div class="num">iii.</div>
+      <div class="name">Educational</div>
+      <div class="body">Private education, STEM, emerging technologies, leadership, and lineage-centered curriculum.</div>
+      <div class="flag">Flagship<em>McCartney Academy</em></div>
+    </div>
+    <div class="vc-pillar">
+      <div class="num">iv.</div>
+      <div class="name">Engagement</div>
+      <div class="body">Civic education, public policy literacy, media, storytelling, and mobilization.</div>
+      <div class="flag">Flagship<em>Block to the Boardroom</em></div>
+    </div>
+    <div class="vc-pillar">
+      <div class="num">v.</div>
+      <div class="name">Emancipated</div>
+      <div class="body">The unfinished obligations of freedom. Documented obligations become policy.</div>
+      <div class="flag">Campaign<em>Restitution 246</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="vc-r246" id="restitution">
+  <div class="vc-r246-grid">
+    <div class="reveal">
+      <div class="vc-r246-rubric">A Campaign under Emancipated</div>
+      <h2 class="vc-r246-h">Restitution <em>246.</em></h2>
+      <p class="vc-r246-deck">A disciplined wage-loss and opportunity-loss framework for the 246 years of stolen labor endured by the lineage under American chattel slavery &mdash; and the inherent loss of opportunity caused by that theft.</p>
+      <p class="vc-r246-body">Restitution 246 does not claim to settle the full reparations question. It does not address pain and suffering, racial terror, family separation, land theft, cultural theft, or every harm that followed slavery. Those injuries require their own frameworks. This campaign is one disciplined lane &mdash; built on the five questions, anchored to the Craemer (2015) wage-hour methodology.</p>
+      <div class="vc-r246-cta">
+        <a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener" class="vc-cta-primary">Read the Campaign <span aria-hidden="true">→</span></a>
+        <a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener" class="vc-cta-link">See also: <em>Measure the Wound</em> &mdash; the foundational record of harms.</a>
+      </div>
+    </div>
+    <aside class="vc-mech reveal">
+      <div class="label">The Working Mechanism</div>
+      <div class="num">$120<span class="t">T</span></div>
+      <div class="tag">Bond held in perpetuity.</div>
+      <p class="body">Interest payments directed to the lineage as partial restitution for lost wages and inherited loss of opportunity. The principal remains held in perpetuity; the interest becomes the distributable mechanism.</p>
+      <hr/>
+      <dl class="attr">
+        <div class="attr-row"><dt>Framework</dt><dd>Lloyd Kelly</dd></div>
+        <div class="attr-row"><dt>Methodology</dt><dd>Craemer, 2015</dd></div>
+        <div class="attr-row"><dt>Status</dt><dd>Open Record</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="vc-pull">
+  <div class="vc-pull-inner reveal">
+    <div class="vc-pull-orn vc-orn-rule"><span class="mk">§</span></div>
+    <div class="vc-pull-rubric">From the Vision</div>
+    <blockquote>A coordinated, sovereign lineage building <em>institutions built by and for the communities it harmed</em> &mdash; for the next thousand years.</blockquote>
+    <div class="vc-pull-cite">E5 Enclave · Founding Doctrine · MMXXVI</div>
+  </div>
+</section>
+
+<section class="vc-record" id="record">
+  <div class="vc-record-orn vc-orn-rule reveal"><span class="mk">¶</span></div>
+  <div class="vc-record-rubric reveal">— The Record · Volume I —</div>
+  <h2 class="vc-record-h reveal">Dispatches from <em>the Coalition.</em></h2>
+  <p class="vc-record-intro reveal">Three documents anchor the founding work — a Think Tank dispatch, the foundational record of the harms we repair, and the campaign framework for restitution. Each is published openly, audited against practice, and built to be cited.</p>
+  <div class="vc-record-grid reveal">
+    <article class="vc-record-card vc-record-lead">
+      <div class="num">№ I.</div>
+      <div class="kind">Think Tank Dispatch</div>
+      <h3 class="title">Parallel Negros</h3>
+      <p class="lede">A foundational comparative dispatch from the E5 think tank — examining the parallel architectures that shape the lineage&rsquo;s path through American history, and the institutional remedies they require.</p>
+      <a href="https://sue-app-ec34c434.base44.app/DocParallelNegros" target="_blank" rel="noopener" class="link">Read the dispatch <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="vc-record-card">
+      <div class="num">№ II.</div>
+      <div class="kind">Foundational Record</div>
+      <h3 class="title">Measure the Wound</h3>
+      <p class="lede">Documentation of the harms we repair. What is measured cannot be dismissed — this is the evidentiary foundation against which every E5 program is built.</p>
+      <a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener" class="link">Read the record <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="vc-record-card">
+      <div class="num">№ III.</div>
+      <div class="kind">Campaign Framework</div>
+      <h3 class="title">Restitution 246</h3>
+      <p class="lede">The Lloyd Kelly framework — a disciplined wage-loss and opportunity-loss mechanism for the 246 years of stolen labor, anchored to the Craemer (2015) wage-hour methodology.</p>
+      <a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener" class="link">Read the campaign <span aria-hidden="true">→</span></a>
+    </article>
+  </div>
+</section>
+
+<section class="vc-contrib" id="coalition">
+  <div class="vc-contrib-orn vc-orn-rule reveal"><span class="mk">¶</span></div>
+  <div class="vc-contrib-rubric reveal">— Contributors to the Founding Issue —</div>
+  <h2 class="vc-contrib-h reveal">A masthead of <em>builders, stewards, and elders.</em></h2>
+  <div class="vc-contrib-grid reveal">
+    <div class="vc-contrib-col">
+      <h4>Editorial</h4>
+      <ul>
+        <li>Israel Lee<small>Chairman &amp; Founder</small></li>
+        <li>The Enclave<small>Editorial direction</small></li>
+        <li>Hermie<small>Visionary intelligence layer</small></li>
+      </ul>
+    </div>
+    <div class="vc-contrib-col">
+      <h4>Programs</h4>
+      <ul>
+        <li>McCartney Academy<small>Educational pillar</small></li>
+        <li>Lineage Farms · FarmBlock<small>Environmental pillar</small></li>
+        <li>Block to the Boardroom<small>Engagement pillar</small></li>
+      </ul>
+    </div>
+    <div class="vc-contrib-col">
+      <h4>Campaigns</h4>
+      <ul>
+        <li>Restitution 246<small>Lloyd Kelly · Framework</small></li>
+        <li>Craemer (2015)<small>Wage-hour methodology</small></li>
+        <li>The Five Questions<small>Doctrinal anchor</small></li>
+      </ul>
+    </div>
+    <div class="vc-contrib-col">
+      <h4>In Memoriam</h4>
+      <ul>
+        <li>Ralph McCartney<small>Community elder · Liberty City</small></li>
+        <li>The Lineage<small>Past, present, and future</small></li>
+        <li>The Coalition<small>Of the Willing</small></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="vc-join" id="join">
+  <div class="vc-join-rubric">How to join</div>
+  <h2 class="vc-join-h">Apply to <em>the Coalition.</em></h2>
+  <p class="vc-join-deck">Black-led organizations, individual builders, funders, and partner institutions: the Coalition is open. Submit your interest and a member of the Council will respond.</p>
+  <div class="vc-join-cta">
+    <a href="https://e5enclave.com/coalition/apply/" class="vc-cta-primary">Apply <span aria-hidden="true">→</span></a>
+    <a href="mailto:contact@e5enclave.com" class="vc-cta-link">or, <em>email the Council</em></a>
+  </div>
+</section>
+
+<footer class="vc-foot" id="press">
+  <div class="vc-foot-seal reveal" role="img" aria-label="E5 Enclave Coalition Seal">
+    <svg class="vc-foot-seal-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+      <!-- Concentric ring system -->
+      <circle cx="160" cy="160" r="148" fill="none" stroke="#0a0908" stroke-width="1.2"/>
+      <circle cx="160" cy="160" r="138" fill="none" stroke="#6d1f20" stroke-width="0.5" opacity="0.45"/>
+      <circle cx="160" cy="160" r="100" fill="none" stroke="#0a0908" stroke-width="0.3" opacity="0.16"/>
+      <circle cx="160" cy="160" r="62" fill="none" stroke="#6d1f20" stroke-width="0.5" opacity="0.4"/>
+
+      <!-- Mesh: dodecagon outline at r=100 (12 nodes, faint) -->
+      <polygon class="mesh-poly" points="260,160 246.6,110 210,73.4 160,60 110,73.4 73.4,110 60,160 73.4,210 110,246.6 160,260 210,246.6 246.6,210"
+        fill="none" stroke="#0a0908" stroke-width="0.4" opacity="0.18"/>
+
+      <!-- 6 spokes from center to active nodes -->
+      <g stroke="#6d1f20" stroke-width="0.5" opacity="0.42" fill="none">
+        <line class="mesh-spoke" x1="160" y1="160" x2="260" y2="160"/>
+        <line class="mesh-spoke" x1="160" y1="160" x2="210" y2="73.4"/>
+        <line class="mesh-spoke" x1="160" y1="160" x2="110" y2="73.4"/>
+        <line class="mesh-spoke" x1="160" y1="160" x2="60" y2="160"/>
+        <line class="mesh-spoke" x1="160" y1="160" x2="110" y2="246.6"/>
+        <line class="mesh-spoke" x1="160" y1="160" x2="210" y2="246.6"/>
+      </g>
+
+      <!-- 6 active member nodes (filled oxblood, animated pulse) -->
+      <g fill="#6d1f20">
+        <circle class="mesh-node-active" cx="260" cy="160" r="3.5"/>
+        <circle class="mesh-node-active" cx="210" cy="73.4" r="3.5"/>
+        <circle class="mesh-node-active" cx="110" cy="73.4" r="3.5"/>
+        <circle class="mesh-node-active" cx="60" cy="160" r="3.5"/>
+        <circle class="mesh-node-active" cx="110" cy="246.6" r="3.5"/>
+        <circle class="mesh-node-active" cx="210" cy="246.6" r="3.5"/>
+      </g>
+
+      <!-- 6 open seat nodes (outlined bone) -->
+      <g fill="#f4eee2" stroke="#0a0908" stroke-width="0.8">
+        <circle cx="246.6" cy="110" r="2.6"/>
+        <circle cx="160" cy="60" r="2.6"/>
+        <circle cx="73.4" cy="110" r="2.6"/>
+        <circle cx="73.4" cy="210" r="2.6"/>
+        <circle cx="160" cy="260" r="2.6"/>
+        <circle cx="246.6" cy="210" r="2.6"/>
+      </g>
+
+      <!-- Center disk (occludes spokes under monogram) -->
+      <circle cx="160" cy="160" r="48" fill="#f4eee2" stroke="#0a0908" stroke-width="0.8"/>
+
+      <!-- E5 monogram -->
+      <text x="160" y="178" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="500" fill="#0a0908">
+        <tspan font-size="44">E</tspan>
+        <tspan font-size="34" font-style="italic" fill="#6d1f20" dx="-2" dy="-5">5</tspan>
+      </text>
+    </svg>
+    <div class="vc-foot-seal-name">Enclave</div>
+    <div class="vc-foot-seal-sub">— Sealed Juneteenth · MMXXVI · Liberty City —</div>
+  </div>
+  <div class="vc-foot-grid">
+    <div class="colophon">
+      <strong>Colophon</strong>
+      Convened in Liberty City, Florida. Set in Cormorant Garamond &amp; Inter. Printed for the Coalition of the Willing, founded Juneteenth, MMXXVI.
+    </div>
+    <div><h4>The Record</h4><ul>
+      <li><a href="https://sue-app-ec34c434.base44.app/DocParallelNegros" target="_blank" rel="noopener">Parallel Negros</a></li>
+      <li><a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener">Measure the Wound</a></li>
+      <li><a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener">Restitution 246</a></li>
+    </ul></div>
+    <div><h4>Departments</h4><ul>
+      <li><a href="#doctrine">Doctrine</a></li>
+      <li><a href="#pillars">The Five Pillars</a></li>
+      <li><a href="#record">The Record</a></li>
+    </ul></div>
+    <div><h4>Programs</h4><ul>
+      <li><a href="#">McCartney Academy</a></li>
+      <li><a href="#">Lineage Farms · FarmBlock</a></li>
+      <li><a href="#">Block to the Boardroom</a></li>
+    </ul></div>
+    <div><h4>The Coalition</h4><ul>
+      <li><a href="#coalition">Members</a></li>
+      <li><a href="#join">Apply</a></li>
+      <li><a href="mailto:contact@e5enclave.com">Contact</a></li>
+    </ul></div>
+  </div>
+  <div class="vc-foot-fine">
+    <span>© MMXXVI <em>E5 Enclave Incorporated</em></span>
+    <span>Founded Juneteenth · Liberty City</span>
+    <span>For the next thousand years</span>
+  </div>
+</footer>
+
 </main>
-<footer class="footer"><span>© 2026 E5 Enclave Incorporated</span><span>Liberty City · Miami · Coalition of the Willing</span></footer>
+
 <script>
-(function buildMesh(){
-  if(!window.d3){var fb=document.getElementById('mesh-fallback');if(fb)fb.style.display='grid';return;}
-  const svg=d3.select('#mesh-svg'); if(!svg.node())return;
-  const container=document.querySelector('.mesh-wrap'); const tooltip=document.getElementById('mesh-tooltip');
-  function getDims(){return{w:container.clientWidth,h:container.clientHeight};}
-  let{w,h}=getDims(); svg.attr('viewBox',`0 0 ${w} ${h}`).attr('preserveAspectRatio','xMidYMid meet');
-  const nodes=[
-    {id:'e5',name:'E5 Enclave',role:'Platform · Coalition Anchor',type:0,r:38},
-    {id:'mccartney',name:'McCartney Academy',role:'Educational Flagship',type:1,r:22},
-    {id:'lineage',name:'Lineage Farms',role:'Environmental Flagship',type:1,r:20},
-    {id:'farmblock',name:'FarmBlock',role:'Environmental Flagship',type:1,r:20,url:'https://farmblock.vip'},
-    {id:'rest246',name:'Restitution 246',role:'Emancipated Campaign',type:1,r:24,url:'https://restitution246.com'},
-    {id:'iamgodiam',name:'IAMGODIAM',role:'Technology Platform',type:1,r:20,url:'https://iamgodiam.com'},
-    {id:'blackdragons',name:'Black Dragons Initiative',role:'Cultural / Justice Vertical',type:1,r:18},
-    {id:'boardroom',name:'From the Black to the Boardroom',role:'Engagement / Media Arm',type:1,r:18},
-    {id:'lineagefnd',name:'The Lineage Foundation',role:'Think Tank Container',type:1,r:18},
-    {id:'partner1',name:'Coalition Partner',role:'Partner Node',type:2,r:14},
-    {id:'partner2',name:'Coalition Partner',role:'Partner Node',type:2,r:14},
-    {id:'open1',name:'Coalition Partner',role:'Open Seat',type:3,r:14},
-    {id:'open2',name:'Coalition Partner',role:'Open Seat',type:3,r:14},
-    {id:'open3',name:'Coalition Partner',role:'Open Seat',type:3,r:14},
-    {id:'open4',name:'Coalition Partner',role:'Open Seat',type:3,r:14}
-  ];
-  if(window.innerWidth<900)nodes.forEach(n=>{n.r=Math.round(n.r*.7);});
-  const links=[
-    {source:'e5',target:'mccartney',weight:2},{source:'e5',target:'lineage',weight:2},{source:'e5',target:'farmblock',weight:2},{source:'e5',target:'rest246',weight:2},{source:'e5',target:'iamgodiam',weight:2},{source:'e5',target:'blackdragons',weight:2},{source:'e5',target:'boardroom',weight:2},{source:'e5',target:'lineagefnd',weight:2},
-    {source:'lineage',target:'farmblock',weight:1},{source:'rest246',target:'lineagefnd',weight:1},{source:'blackdragons',target:'farmblock',weight:1},{source:'iamgodiam',target:'rest246',weight:1},
-    {source:'mccartney',target:'partner1',weight:.8},{source:'farmblock',target:'partner2',weight:.8},{source:'rest246',target:'open1',weight:.5},{source:'boardroom',target:'open2',weight:.5},{source:'lineage',target:'open3',weight:.5},{source:'lineagefnd',target:'open4',weight:.5}
-  ];
-  const defs=svg.append('defs');
-  const glow=defs.append('filter').attr('id','mesh-glow').attr('x','-50%').attr('y','-50%').attr('width','200%').attr('height','200%');
-  glow.append('feGaussianBlur').attr('stdDeviation','3').attr('result','blur'); const merge=glow.append('feMerge'); merge.append('feMergeNode').attr('in','blur'); merge.append('feMergeNode').attr('in','SourceGraphic');
-  const grad=defs.append('radialGradient').attr('id','mesh-core'); grad.append('stop').attr('offset','0%').attr('stop-color','#f1d18a'); grad.append('stop').attr('offset','100%').attr('stop-color','#b08a31');
-  const simulation=d3.forceSimulation(nodes)
-    .force('link',d3.forceLink(links).id(d=>d.id).distance(d=>d.weight===2?150:d.weight>=.8?105:82).strength(d=>d.weight===2?.35:d.weight>=.8?.18:.10))
-    .force('charge',d3.forceManyBody().strength(d=>d.type===0?-1700:d.type===1?-500:-220))
-    .force('center',d3.forceCenter(w/2,h/2)).force('collide',d3.forceCollide().radius(d=>d.r+16)).alphaDecay(.02).velocityDecay(.55);
-  nodes[0].fx=w/2; nodes[0].fy=h/2;
-  const linkSel=svg.append('g').selectAll('line').data(links).enter().append('line').attr('stroke','#7a1518').attr('stroke-opacity',d=>d.weight===2?.38:d.weight>=.8?.22:.16).attr('stroke-width',d=>d.weight===2?1.4:1).attr('stroke-dasharray',d=>d.weight===.5?'4,4':null);
-  const nodeG=svg.append('g').selectAll('g').data(nodes).enter().append('g').style('cursor',d=>d.type===0?'default':'pointer');
-  nodeG.append('circle').attr('r',d=>d.r).attr('fill',d=>d.type===0?'url(#mesh-core)':d.type===1?'#b08a31':'transparent').attr('stroke',d=>d.type===0?'#7a1518':d.type===1?'#7a1518':'#b08a31').attr('stroke-width',d=>d.type===3?1.5:1.2).attr('stroke-dasharray',d=>d.type===3?'4,4':null).attr('filter',d=>d.type===0?'url(#mesh-glow)':null);
-  nodeG.filter(d=>d.type===3).select('circle').classed('pulse-seat',true);
-  nodeG.filter(d=>d.type===0).append('text').attr('text-anchor','middle').attr('dy','0.35em').attr('class','mesh-core-label').text('E5');
-  nodeG.filter(d=>d.type===1).append('text').attr('text-anchor','middle').attr('dy',d=>d.r+18).attr('class','mesh-node-label').text(d=>d.name.toUpperCase());
-  nodeG.filter(d=>d.type===2).append('text').attr('text-anchor','middle').attr('dy','0.35em').attr('font-family','Inter, Arial, sans-serif').attr('font-size','11px').attr('font-weight','800').attr('fill','#b08a31').text('•');
-  nodeG.filter(d=>d.type===3).append('text').attr('text-anchor','middle').attr('dy','0.35em').attr('font-family','Inter, Arial, sans-serif').attr('font-size','16px').attr('font-weight','700').attr('fill','#b08a31').text('+');
-  nodeG.on('mouseenter',function(event,d){d3.select(this).select('circle').transition().duration(250).attr('r',d.r*1.16);linkSel.transition().duration(250).attr('stroke-opacity',l=>(l.source.id===d.id||l.target.id===d.id)?.82:.08);tooltip.querySelector('.name').textContent=d.name;tooltip.querySelector('.role').textContent=d.role;var ttLink=tooltip.querySelector('.tt-link');if(d.url){ttLink.href=d.url;ttLink.textContent='Visit site →';ttLink.style.display='block';}else{ttLink.style.display='none';}tooltip.style.opacity='1';}).on('mousemove',function(event){const rect=container.getBoundingClientRect();tooltip.style.left=(event.clientX-rect.left+16)+'px';tooltip.style.top=(event.clientY-rect.top+16)+'px';}).on('mouseleave',function(event,d){d3.select(this).select('circle').transition().duration(250).attr('r',d.r);linkSel.transition().duration(250).attr('stroke-opacity',l=>l.weight===2?.38:l.weight>=.8?.22:.16);tooltip.style.opacity='0';});
-  simulation.on('tick',()=>{const pad=28;nodes.forEach(n=>{n.x=Math.max(n.r+pad,Math.min(w-n.r-pad,n.x));n.y=Math.max(n.r+pad,Math.min(h-n.r-pad,n.y));});linkSel.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);nodeG.attr('transform',d=>`translate(${d.x}, ${d.y})`);});
-  setInterval(()=>{if(simulation.alpha()<.05)simulation.alpha(.06).restart();},5000);
-  window.addEventListener('resize',()=>{const dims=getDims();w=dims.w;h=dims.h;svg.attr('viewBox',`0 0 ${w} ${h}`);simulation.force('center',d3.forceCenter(w/2,h/2));nodes[0].fx=w/2;nodes[0].fy=h/2;simulation.alpha(.45).restart();});
-  const rcBtn=document.getElementById('mesh-recenter');
-  if(rcBtn)rcBtn.addEventListener('click',()=>{nodes[0].fx=w/2;nodes[0].fy=h/2;simulation.alpha(.4).restart();});
-})();
+  // Reveal-on-scroll
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function(e){ e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    els.forEach(function(e){ io.observe(e); });
+  })();
 
-(function initProgress(){
-  const bar=document.getElementById('progress-bar');
-  if(!bar)return;
-  function tick(){const s=document.documentElement.scrollTop||document.body.scrollTop;const t=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(t>0?s/t*100:0)+'%';}
-  window.addEventListener('scroll',tick,{passive:true});
-})();
+  // Pointer-aware gold gleam on the foundation slab
+  (function(){
+    var slab = document.querySelector('.vc-foundation');
+    if (!slab || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var raf = 0;
+    slab.addEventListener('mousemove', function(e){
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(function(){
+        var rect = slab.getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width) * 100;
+        slab.style.setProperty('--gleam-x', Math.max(0, Math.min(100, x)) + '%');
+      });
+    });
+    slab.addEventListener('mouseleave', function(){
+      slab.style.setProperty('--gleam-x', '50%');
+    });
+  })();
 
-(function initReveal(){
-  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-  const targets=document.querySelectorAll('.card,.org,.mantra>div');
-  targets.forEach(el=>el.classList.add('reveal'));
-  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.08,rootMargin:'0px 0px -20px 0px'});
-  requestAnimationFrame(()=>requestAnimationFrame(()=>targets.forEach(el=>obs.observe(el))));
-})();
+  // Smooth scroll for in-page anchors
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) return;
+    var t = document.getElementById(id);
+    if (t) {
+      e.preventDefault();
+      t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', '#' + id);
+    }
+  });
 </script>
+
 </body>
 </html>
