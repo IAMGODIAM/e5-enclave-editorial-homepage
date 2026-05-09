@@ -1,6 +1,8 @@
 # E5 Enclave Editorial Homepage
 
-A single-page editorial homepage for **E5 Enclave Incorporated — A Lineage-based Think Tank**.
+A single-page editorial homepage for **E5 Enclave Incorporated — A Lineage-led Think Tank**.
+
+> **v2 status.** As of 2026-05-09 this is the v2 editorial homepage from the design handoff. Three founding dates in a ruled strip, unified E5 + ENCLAVE wordmark, two-palette toggle (`editorial` / `original`, persisting via `localStorage.e5-palette`), counter band, Coalition Covenant section, mesh seal motion, print stylesheet. See `CHANGELOG.md` for the v1 → v2 deltas.
 
 This repo holds the canonical, frozen v1.0 founding artifact: a polished
 masthead-style landing page deployed to GitHub Pages. Anything beyond this
