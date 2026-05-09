@@ -1,23 +1,23 @@
 <!doctype html>
-<!-- E5 Enclave · Editorial homepage · v1.0 · Direction C -->
+<!-- E5 Enclave · Editorial homepage · v2.0 · with palette toggle, three-date hierarchy, counter band, Coalition Covenant -->
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>E5 Enclave — A Lineage-based Think Tank</title>
-<meta name="description" content="E5 Enclave is a Lineage-based Think Tank comprised of a Coalition of the Willing — building the institutions, evidence systems, and projects the lineage needs to repair, rise, and govern its future."/>
+<title>E5 Enclave — A Lineage-led Think Tank</title>
+<meta name="description" content="E5 Enclave is a lineage-led think tank comprised of a Coalition of the Willing — building the institutions, evidence systems, and projects the lineage needs to repair, rise, and govern its future."/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="E5 Enclave"/>
-<meta property="og:title" content="E5 Enclave — A Lineage-based Think Tank"/>
-<meta property="og:description" content="A Coalition of the Willing. Founded Juneteenth MMXXVI in Liberty City. For the next thousand years."/>
+<meta property="og:title" content="E5 Enclave — A Lineage-led Think Tank"/>
+<meta property="og:description" content="A lineage-led think tank comprised of a Coalition of the Willing. Founded 2 June 2024 in Liberty City. Public Announcement Juneteenth · MMXXVI. Eden Launch 17 February · MMXXVII."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:image" content="https://e5enclave.com/assets/og.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="E5 Enclave — A Lineage-based Think Tank"/>
+<meta property="og:image:alt" content="E5 Enclave — A Lineage-led Think Tank"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="E5 Enclave — A Lineage-based Think Tank"/>
-<meta name="twitter:description" content="A Coalition of the Willing. Founded Juneteenth MMXXVI · Liberty City."/>
+<meta name="twitter:title" content="E5 Enclave — A Lineage-led Think Tank"/>
+<meta name="twitter:description" content="A lineage-led think tank comprised of a Coalition of the Willing. Founded 2 June 2024 · Liberty City."/>
 <meta name="twitter:image" content="https://e5enclave.com/assets/og.png"/>
 <meta name="theme-color" content="#0a0908"/>
 <link rel="canonical" href="https://e5enclave.com/"/>
@@ -28,15 +28,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap"/>
 <style>
+  /* ============================================================
+     Tokens — semantic, palette-aware.
+     [data-palette="editorial"]  → cream + oxblood (canonical)
+     [data-palette="original"]   → parchment + forest + gold (E5)
+     ============================================================ */
   :root {
+    --vc-display: "Cormorant Garamond", "Playfair Display", "Times New Roman", serif;
+    --vc-text: "Inter", "Helvetica Neue", sans-serif;
+  }
+  html[data-palette="editorial"], html:not([data-palette]) {
     --vc-bone: #f4eee2; --vc-bone-2: #ebe3d1; --vc-bone-3: #e2d8c2;
     --vc-ink: #0a0908; --vc-ink-2: #1f1c18; --vc-ink-3: #3a342c;
     --vc-oxblood: #6d1f20; --vc-oxblood-2: #4a1416;
     --vc-gold: #a8884a; --vc-gold-2: #c4a468;
     --vc-muted: #6b6457; --vc-muted-2: #8a8270;
     --vc-rule: rgba(10,9,8,0.14); --vc-rule-2: rgba(10,9,8,0.32); --vc-rule-3: rgba(10,9,8,0.62);
-    --vc-display: "Cormorant Garamond", "Playfair Display", "Times New Roman", serif;
-    --vc-text: "Inter", "Helvetica Neue", sans-serif;
+    --vc-bone-rgb: 244,238,226;
+    --vc-ink-rgb: 10,9,8;
+  }
+  html[data-palette="original"] {
+    /* Parchment ground, deep forest ink, gold ochre accent. */
+    --vc-bone: #e2dbd3; --vc-bone-2: #d6cdc1; --vc-bone-3: #c8bdab;
+    --vc-ink: #010101; --vc-ink-2: #181818; --vc-ink-3: #2a2a2a;
+    /* Eyebrow/accent: forest green; secondary accent: gold ochre. */
+    --vc-oxblood: #293d1b; --vc-oxblood-2: #1a2a10;
+    --vc-gold: #b7954d; --vc-gold-2: #cda965;
+    --vc-muted: #727272; --vc-muted-2: #555555;
+    --vc-rule: rgba(1,1,1,0.16); --vc-rule-2: rgba(1,1,1,0.32); --vc-rule-3: rgba(1,1,1,0.62);
+    --vc-bone-rgb: 226,219,211;
+    --vc-ink-rgb: 1,1,1;
   }
   * { box-sizing: border-box; }
   html, body {
@@ -85,25 +106,40 @@
     margin: 0; padding-left: 0.40em; line-height: 1; position: relative; }
 
   /* ===== MASTHEAD ===== */
-  .vc-masthead { padding: 70px 56px 0; text-align: center; position: relative; overflow: hidden; }
-  .vc-masthead-corners { position: absolute; top: 70px; left: 56px; right: 56px;
-    display: flex; justify-content: space-between; font-size: 9px; letter-spacing: 0.36em;
-    text-transform: uppercase; color: var(--vc-muted); line-height: 1.8; }
-  .vc-masthead-corners em { font-family: var(--vc-display); font-style: italic; font-size: 15px;
-    color: var(--vc-ink); letter-spacing: 0.01em; text-transform: none; display: block; margin-top: 2px; }
-  .vc-masthead-corners .l { text-align: left; }
-  .vc-masthead-corners .r { text-align: right; }
-  .vc-crest { display: block; width: 100%; max-width: 600px; margin: 0 auto 48px; }
-  .vc-crest svg { width: 100%; height: auto; display: block; }
+  .vc-masthead { padding: 56px 56px 0; text-align: center; position: relative; overflow: hidden; }
 
-  /* ===== FOUNDATION BLOCK — ENCLAVE plinth ===== */
+  /* Tiny rule + ornament above the wordmark unit. */
+  .vc-masthead-rule {
+    display: flex; align-items: center; justify-content: center; gap: 18px;
+    max-width: 460px; margin: 0 auto 28px;
+    color: var(--vc-rule-3);
+  }
+  .vc-masthead-rule::before, .vc-masthead-rule::after {
+    content: ""; flex: 1; height: 1px; background: currentColor;
+  }
+  .vc-masthead-rule .mk {
+    font-family: var(--vc-display); font-style: italic; font-size: 18px;
+    color: var(--vc-oxblood); line-height: 1;
+  }
+  .vc-masthead-eyebrow {
+    font-family: var(--vc-text); font-size: 9.5px;
+    letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-ink); font-weight: 600; padding-left: 0.5em;
+    margin-bottom: 32px;
+  }
+
+  /* ============================================================
+     FOUNDATION — the unified wordmark plinth.
+     E5 mark and ENCLAVE composed as one optical unit.
+     ENCLAVE is the dominant form; E5 is the seal that opens it.
+     ============================================================ */
   .vc-foundation {
     --gleam-x: 50%;
     background:
-      radial-gradient(ellipse 55% 80% at var(--gleam-x) 50%, rgba(196, 164, 104, 0.16), transparent 70%),
+      radial-gradient(ellipse 55% 80% at var(--gleam-x) 50%, rgba(196, 164, 104, 0.18), transparent 70%),
       var(--vc-ink);
     color: var(--vc-bone);
-    padding: 64px 56px 56px;
+    padding: 56px 56px 48px;
     margin: 0 -56px;
     text-align: center;
     position: relative;
@@ -114,51 +150,193 @@
   @property --gleam-x { syntax: '<percentage>'; initial-value: 50%; inherits: false; }
   .vc-foundation::before, .vc-foundation::after {
     content: ""; position: absolute; left: 0; right: 0;
-    height: 1px; background: rgba(244,238,226,0.18);
+    height: 1px; background: rgba(var(--vc-bone-rgb),0.18);
     pointer-events: none;
   }
-  .vc-foundation::before { top: 22px; }
-  .vc-foundation::after { bottom: 22px; }
-  .vc-foundation-mark {
+  .vc-foundation::before { top: 18px; }
+  .vc-foundation::after { bottom: 18px; }
+
+  /* Wordmark unit — E5 + ENCLAVE composed tight. */
+  .vc-wordmark {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    line-height: 1;
     font-family: var(--vc-display);
     font-weight: 500;
-    font-size: clamp(56px, 10vw, 156px);
-    letter-spacing: 0.40em;
-    text-transform: uppercase;
-    color: var(--vc-bone);
-    margin: 0;
-    padding-left: 0.40em;
-    line-height: 1;
-    position: relative;
   }
-  .vc-foundation-mark .em5 {
-    color: var(--vc-gold-2);
+  .vc-wordmark .em5 {
     font-style: italic;
     font-weight: 400;
-    letter-spacing: 0;
-    margin-right: -0.08em;
+    color: var(--vc-gold-2);
+    font-size: clamp(64px, 11vw, 172px);
+    letter-spacing: -0.02em;
+    line-height: 0.92;
+    margin-right: clamp(10px, 1.4vw, 22px);
+    /* sit slightly higher so cap-height aligns with ENCLAVE x-height crown */
+    transform: translateY(-0.04em);
   }
-  .vc-foundation-credo {
+  .vc-wordmark .word {
+    font-size: clamp(64px, 13.4vw, 210px);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--vc-bone);
+    padding-left: 0.18em;
+    line-height: 0.92;
+    /* subtle highlight that catches the gleam — preserved */
+    background: linear-gradient(180deg,
+      rgba(var(--vc-bone-rgb),1.0) 0%,
+      rgba(var(--vc-bone-rgb),0.92) 60%,
+      rgba(var(--vc-bone-rgb),0.78) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; color: transparent;
+  }
+
+  /* Tagline — co-equal to the wordmark. Distinct face, breathing color. */
+  .vc-tagline {
     font-family: var(--vc-display);
     font-style: italic;
-    font-size: clamp(15px, 1.4vw, 20px);
+    font-weight: 400;
+    font-size: clamp(18px, 2.1vw, 30px);
     color: var(--vc-gold-2);
-    margin-top: 28px;
-    letter-spacing: 0.01em;
-    max-width: 60ch;
-    margin-left: auto;
-    margin-right: auto;
+    letter-spacing: 0.005em;
+    line-height: 1.35;
+    max-width: 28ch;
+    margin: 28px auto 0;
   }
-  .vc-foundation-credo span.dot { color: var(--vc-bone); opacity: 0.4; padding: 0 12px; }
-  .vc-foundation-meta {
-    margin-top: 22px;
+  .vc-tagline .ll { color: var(--vc-bone); font-style: italic; }
+  .vc-tagline .cw { color: var(--vc-bone); font-style: italic; }
+
+  /* Three founding dates — equal weight, ruled apart. */
+  .vc-dates {
+    margin: 36px auto 0;
+    display: inline-flex;
+    gap: 0;
+    align-items: stretch;
+    flex-wrap: wrap; justify-content: center;
+    border-top: 1px solid rgba(var(--vc-bone-rgb),0.20);
+    border-bottom: 1px solid rgba(var(--vc-bone-rgb),0.20);
+  }
+  .vc-date {
+    padding: 14px 28px;
+    border-right: 1px solid rgba(var(--vc-bone-rgb),0.16);
+    text-align: center;
+    min-width: 0;
+  }
+  .vc-date:last-child { border-right: 0; }
+  .vc-date .lbl {
+    display: block;
     font-family: var(--vc-text);
-    font-size: 9.5px;
-    letter-spacing: 0.5em;
+    font-size: 8.5px;
+    letter-spacing: 0.42em;
     text-transform: uppercase;
-    color: rgba(244,238,226,0.5);
     font-weight: 600;
+    color: rgba(var(--vc-bone-rgb),0.55);
+    margin-bottom: 6px;
   }
+  .vc-date .val {
+    font-family: var(--vc-display);
+    font-style: italic;
+    font-size: clamp(15px, 1.3vw, 19px);
+    color: var(--vc-bone);
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
+  .vc-date .val em { color: var(--vc-gold-2); font-style: italic; }
+
+  /* Colophon line — oblique reverence, no explicit citation. */
+  .vc-foundation-colophon {
+    margin-top: 28px;
+    font-family: var(--vc-display);
+    font-style: italic;
+    font-size: 13.5px;
+    color: rgba(var(--vc-bone-rgb),0.62);
+    letter-spacing: 0.015em;
+    line-height: 1.55;
+    max-width: 56ch;
+    margin-left: auto; margin-right: auto;
+  }
+  .vc-foundation-colophon .center { color: var(--vc-gold-2); font-style: italic; }
+
+  @media (max-width: 720px) {
+    .vc-wordmark { flex-direction: column; gap: 4px; }
+    .vc-wordmark .em5 { margin-right: 0; transform: none; }
+    .vc-wordmark .word { padding-left: 0; }
+    .vc-date { padding: 12px 16px; }
+  }
+
+  /* ============================================================
+     COUNTER BAND — institutional accounting, beneath the hero.
+     ============================================================ */
+  .vc-counter {
+    background: var(--vc-bone-2);
+    border-bottom: 1px solid var(--vc-rule-3);
+    padding: 28px 56px;
+  }
+  .vc-counter-grid {
+    max-width: 1280px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+  }
+  .vc-counter-cell { text-align: center; }
+  .vc-counter-lbl {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 9px; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--vc-muted); font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .vc-counter-num {
+    font-family: var(--vc-display);
+    font-weight: 400;
+    font-size: clamp(36px, 4.4vw, 56px);
+    line-height: 0.95;
+    color: var(--vc-ink);
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums lining-nums;
+    transition: color .35s ease;
+  }
+  .vc-counter-num.tick { color: var(--vc-oxblood); }
+  .vc-counter-meta {
+    font-family: var(--vc-display); font-style: italic;
+    font-size: 13px; color: var(--vc-muted);
+    margin-top: 6px;
+  }
+  .vc-counter-orn {
+    width: 1px; height: 56px; background: var(--vc-rule-2);
+    align-self: center; justify-self: center;
+  }
+  @media (max-width: 720px) {
+    .vc-counter-grid { grid-template-columns: 1fr; gap: 18px; }
+    .vc-counter-orn { width: 56px; height: 1px; }
+  }
+
+  /* ============================================================
+     PALETTE TOGGLE — discreet, top-right of nav.
+     ============================================================ */
+  .vc-palette-toggle {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 6px;
+    border: 1px solid var(--vc-rule-2);
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  .vc-palette-toggle:hover { border-color: var(--vc-ink); }
+  .vc-palette-toggle .sw {
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 1px solid rgba(var(--vc-ink-rgb),0.35);
+    transition: transform .2s ease;
+  }
+  .vc-palette-toggle .sw-edit { background: linear-gradient(135deg, #f4eee2 0 50%, #6d1f20 50% 100%); }
+  .vc-palette-toggle .sw-orig { background: linear-gradient(135deg, #e2dbd3 0 50%, #293d1b 50% 100%); }
+  html[data-palette="editorial"] .vc-palette-toggle .sw-edit,
+  html:not([data-palette]) .vc-palette-toggle .sw-edit { transform: scale(1.18); border-color: var(--vc-oxblood); }
+  html[data-palette="original"] .vc-palette-toggle .sw-orig { transform: scale(1.18); border-color: var(--vc-oxblood); }
 
   /* ===== NAV ===== */
   .vc-nav { display: flex; gap: 44px; justify-content: center; padding: 18px 56px; flex-wrap: wrap;
@@ -534,7 +712,100 @@
   .vc-foot-fine em { font-family: var(--vc-display); font-style: italic; font-size: 13px;
     color: var(--vc-ink); letter-spacing: 0.01em; text-transform: none; }
 
-  /* ===== Reveal on scroll ===== */
+  /* ============================================================
+     COALITION COVENANT — anchor copy block.
+     ============================================================ */
+  .vc-covenant {
+    padding: 104px 56px;
+    background: var(--vc-bone);
+    border-bottom: 1px solid var(--vc-rule-3);
+  }
+  .vc-covenant-grid {
+    max-width: 1180px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px;
+    align-items: start;
+  }
+  .vc-covenant-side .rubric {
+    font-size: 9.5px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--vc-oxblood); font-weight: 600; display: block; margin-bottom: 16px;
+  }
+  .vc-covenant-side h3 {
+    font-family: var(--vc-display); font-weight: 400;
+    font-size: clamp(36px, 4.6vw, 64px); line-height: 1.0; letter-spacing: -0.022em;
+    margin: 0 0 24px; color: var(--vc-ink);
+  }
+  .vc-covenant-side h3 em { font-style: italic; color: var(--vc-oxblood); }
+  .vc-covenant-side .terms { display: flex; flex-direction: column; gap: 0;
+    border-top: 1px solid var(--vc-rule-2); margin-top: 24px; }
+  .vc-covenant-side .term {
+    display: grid; grid-template-columns: 36px 1fr; gap: 16px;
+    padding: 14px 0; border-bottom: 1px solid var(--vc-rule);
+    align-items: baseline;
+  }
+  .vc-covenant-side .term .n {
+    font-family: var(--vc-display); font-style: italic; font-size: 22px;
+    color: var(--vc-oxblood); line-height: 1;
+  }
+  .vc-covenant-side .term .t {
+    font-family: var(--vc-display); font-size: 17px; line-height: 1.4; color: var(--vc-ink);
+  }
+  .vc-covenant-body p {
+    font-family: var(--vc-display); font-size: 19px; line-height: 1.6;
+    color: var(--vc-ink); margin: 0 0 16px; max-width: 56ch;
+  }
+  .vc-covenant-body p em { color: var(--vc-oxblood); font-style: italic; }
+  .vc-covenant-body p.lede { font-size: 24px; line-height: 1.4; color: var(--vc-ink); }
+  .vc-covenant-body p.lede em { color: var(--vc-oxblood); font-style: italic; }
+  @media (max-width: 1000px) {
+    .vc-covenant-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  /* ============================================================
+     CONCENTRIC MESH SEAL — subtle motion.
+     ============================================================ */
+  @keyframes vc-ring-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  @keyframes vc-ring-counter {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(-360deg); }
+  }
+  @keyframes vc-radial-breath {
+    0%, 100% { opacity: 0.40; }
+    50%      { opacity: 0.78; }
+  }
+  .vc-foot-seal-svg .ring-slow { transform-origin: 160px 160px;
+    animation: vc-ring-spin 220s linear infinite; }
+  .vc-foot-seal-svg .ring-mid  { transform-origin: 160px 160px;
+    animation: vc-ring-counter 140s linear infinite; }
+  .vc-foot-seal-svg .ring-breath { animation: vc-radial-breath 7s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .vc-foot-seal-svg .ring-slow,
+    .vc-foot-seal-svg .ring-mid,
+    .vc-foot-seal-svg .ring-breath { animation: none; }
+  }
+
+  /* ============================================================
+     PRINT — funder packets, archival.
+     ============================================================ */
+  @media print {
+    html, body { background: #fff !important; color: #000 !important; }
+    .vc-nav, .vc-palette-toggle, .vc-counter, .vc-skip { display: none !important; }
+    .vc-foundation { background: #fff !important; color: #000 !important; padding: 32px 0; margin: 0; border-color: #000; }
+    .vc-foundation::before, .vc-foundation::after { background: #000 !important; }
+    .vc-wordmark .em5 { color: #000 !important; }
+    .vc-wordmark .word { -webkit-text-fill-color: #000 !important; color: #000 !important;
+      background: none !important; }
+    .vc-tagline, .vc-foundation-colophon, .vc-date .val, .vc-date .lbl { color: #000 !important; }
+    .vc-date .val em, .vc-tagline { color: #333 !important; }
+    .vc-values, .vc-pull, .vc-mech { background: #fff !important; color: #000 !important;
+      border: 1px solid #000 !important; }
+    .vc-values *, .vc-pull *, .vc-mech * { color: #000 !important; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+    section { page-break-inside: avoid; }
+    a { color: #000 !important; text-decoration: underline; }
+  }
   .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
   .reveal.in { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
@@ -603,30 +874,29 @@
 <main id="main">
 
 <header class="vc-masthead">
-  <div class="vc-masthead-corners">
-    <span class="l">Established<br/><em>Liberty City</em></span>
-    <span class="r">Eden Launch<br/><em>17 February 2027</em></span>
-  </div>
-  <div class="vc-crest" role="img" aria-label="E5 Enclave">
-    <svg viewBox="0 0 540 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-      <line x1="60" y1="56" x2="230" y2="56" stroke="#0a0908" stroke-width="0.8" opacity="0.4"/>
-      <text x="270" y="65" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="22" font-style="italic" fill="#6d1f20">✦</text>
-      <line x1="310" y1="56" x2="480" y2="56" stroke="#0a0908" stroke-width="0.8" opacity="0.4"/>
-      <text x="270" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" letter-spacing="7" font-weight="600" fill="#0a0908">FOUNDED MMXXVI · LIBERTY CITY</text>
-      <text x="270" y="270" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="500" fill="#0a0908">
-        <tspan font-size="220">E</tspan>
-        <tspan font-size="170" font-style="italic" fill="#6d1f20" dx="-12" dy="-18">5</tspan>
-      </text>
-      <line x1="90" y1="306" x2="240" y2="306" stroke="#6d1f20" stroke-width="0.9"/>
-      <circle cx="270" cy="306" r="2.5" fill="#6d1f20"/>
-      <line x1="300" y1="306" x2="450" y2="306" stroke="#6d1f20" stroke-width="0.9"/>
-      <text x="270" y="338" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="17" font-style="italic" fill="#6b6457" letter-spacing="0.5">— A Lineage-based Think Tank —</text>
-    </svg>
-  </div>
+  <div class="vc-masthead-rule"><span class="mk">✦</span></div>
+  <div class="vc-masthead-eyebrow">Liberty City · Established MMXXIV</div>
   <div class="vc-foundation">
-    <h1 class="vc-foundation-mark">ENCLAVE</h1>
-    <div class="vc-foundation-credo">A Lineage-based Think Tank<span class="dot">·</span>comprised of a Coalition of the Willing.</div>
-    <div class="vc-foundation-meta">Founded Juneteenth · MMXXVI · Liberty City</div>
+    <h1 class="vc-wordmark" aria-label="E5 Enclave">
+      <span class="em5" aria-hidden="true">E5</span>
+      <span class="word">Enclave</span>
+    </h1>
+    <p class="vc-tagline">A <span class="ll">lineage-led think tank</span> comprised of a <span class="cw">Coalition of the Willing</span>.</p>
+    <div class="vc-dates" role="list">
+      <div class="vc-date" role="listitem">
+        <span class="lbl">Founded</span>
+        <span class="val"><em>2 June 2024</em></span>
+      </div>
+      <div class="vc-date" role="listitem">
+        <span class="lbl">Public Announcement</span>
+        <span class="val">Juneteenth · <em>MMXXVI</em></span>
+      </div>
+      <div class="vc-date" role="listitem">
+        <span class="lbl">Eden Launch</span>
+        <span class="val">17 February · <em>MMXXVII</em></span>
+      </div>
+    </div>
+    <p class="vc-foundation-colophon">Set against the calendar of the lineage. The dates carry their own genealogy. <span class="center">The center holds.</span></p>
   </div>
 </header>
 
@@ -637,21 +907,45 @@
   <a href="#restitution">Restitution 246</a><span class="sep"></span>
   <a href="#coalition">Coalition</a><span class="sep"></span>
   <a href="#join">Join</a>
+  <button class="vc-palette-toggle" id="vc-palette-toggle" type="button" aria-label="Toggle palette" title="Toggle palette">
+    <span class="sw sw-edit" aria-hidden="true"></span>
+    <span class="sw sw-orig" aria-hidden="true"></span>
+  </button>
 </nav>
+
+<section class="vc-counter" aria-label="Coalition register">
+  <div class="vc-counter-grid">
+    <div class="vc-counter-cell">
+      <div class="vc-counter-lbl">Supporters of record</div>
+      <div class="vc-counter-num" data-counter-target="1247" data-counter-step="1">0</div>
+      <div class="vc-counter-meta">individuals on the rolls</div>
+    </div>
+    <div class="vc-counter-orn" aria-hidden="true"></div>
+    <div class="vc-counter-cell">
+      <div class="vc-counter-lbl">Member organizations</div>
+      <div class="vc-counter-num" data-counter-target="38" data-counter-step="1">0</div>
+      <div class="vc-counter-meta">institutions of the Coalition</div>
+    </div>
+    <div class="vc-counter-orn" aria-hidden="true"></div>
+    <div class="vc-counter-cell">
+      <div class="vc-counter-lbl">Pillars in motion</div>
+      <div class="vc-counter-num" data-counter-target="5" data-counter-step="1">0</div>
+      <div class="vc-counter-meta">the structure of the remedy</div>
+    </div>
+  </div>
+</section>
 
 <section class="vc-cover">
   <aside class="vc-cover-rail">
-    <div class="vol">N°<br/>01</div>
-    <hr/>
     <div class="meta-block">From Liberty City<br/><em>To the Nation</em></div>
     <hr/>
     <div class="feature-list">
-      <span class="head">In this issue</span>
-      <a href="https://sue-app-ec34c434.base44.app/DocParallelNegros" target="_blank" rel="noopener"><em>Parallel Negros <span class="pg">№ I</span></em></a>
-      <a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener"><em>Measure the Wound <span class="pg">№ II</span></em></a>
-      <a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener"><em>Restitution 246 <span class="pg">№ III</span></em></a>
-      <a href="#pillars"><em>The Five Pillars <span class="pg">p. 32</span></em></a>
-      <a href="#coalition"><em>The Coalition <span class="pg">p. 58</span></em></a>
+      <span class="head">The Record</span>
+      <a href="https://e5enclave.com/record/parallel-negros/" target="_blank" rel="noopener"><em>Parallel Negros</em></a>
+      <a href="https://e5enclave.com/record/measure-the-wound/" target="_blank" rel="noopener"><em>Measure the Wound</em></a>
+      <a href="https://e5enclave.com/record/restitution-246/" target="_blank" rel="noopener"><em>Restitution 246</em></a>
+      <a href="#pillars"><em>The Five Pillars</em></a>
+      <a href="#coalition"><em>The Coalition</em></a>
     </div>
   </aside>
   <div class="vc-cover-main reveal">
@@ -663,6 +957,27 @@
       <span>Convened in<br/><em>Liberty City</em></span>
       <span>Set in<br/><em>Cormorant Garamond</em></span>
       <span>Printed for<br/><em>The Coalition</em></span>
+    </div>
+  </div>
+</section>
+
+<section class="vc-covenant" aria-label="What is a Coalition of the Willing">
+  <div class="vc-covenant-grid">
+    <aside class="vc-covenant-side reveal">
+      <span class="rubric">— The Covenant —</span>
+      <h3>What it means to <em>walk with us.</em></h3>
+      <div class="terms">
+        <div class="term"><span class="n">i.</span><span class="t">A financial stake of any size.</span></div>
+        <div class="term"><span class="n">ii.</span><span class="t">Four convenings per year, minimum.</span></div>
+        <div class="term"><span class="n">iii.</span><span class="t">Eight hours of presence at the work.</span></div>
+        <div class="term"><span class="n">iv.</span><span class="t">Introduce two others to what we are building.</span></div>
+      </div>
+    </aside>
+    <div class="vc-covenant-body reveal">
+      <p class="lede">The Coalition is not an audience. It is <em>a covenant.</em></p>
+      <p>A Coalition of the Willing is exactly what it names. Those who understand walk with us. Those who do not are not pursued. We do not negotiate with the question of whether the work is worth doing. We answer it by doing the work.</p>
+      <p><em>The center holds, and the door is open</em> to those who come through it on their own legs.</p>
+      <p>To be of the Coalition is to commit time, talent, and treasure. The Coalition grows the Coalition. The captains do not.</p>
     </div>
   </div>
 </section>
@@ -793,8 +1108,8 @@
       <p class="vc-r246-deck">A disciplined wage-loss and opportunity-loss framework for the 246 years of stolen labor endured by the lineage under American chattel slavery &mdash; and the inherent loss of opportunity caused by that theft.</p>
       <p class="vc-r246-body">Restitution 246 does not claim to settle the full reparations question. It does not address pain and suffering, racial terror, family separation, land theft, cultural theft, or every harm that followed slavery. Those injuries require their own frameworks. This campaign is one disciplined lane &mdash; built on the five questions, anchored to the Craemer (2015) wage-hour methodology.</p>
       <div class="vc-r246-cta">
-        <a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener" class="vc-cta-primary">Read the Campaign <span aria-hidden="true">→</span></a>
-        <a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener" class="vc-cta-link">See also: <em>Measure the Wound</em> &mdash; the foundational record of harms.</a>
+        <a href="https://e5enclave.com/record/restitution-246/" target="_blank" rel="noopener" class="vc-cta-primary">Read the Campaign <span aria-hidden="true">→</span></a>
+        <a href="https://e5enclave.com/record/measure-the-wound/" target="_blank" rel="noopener" class="vc-cta-link">See also: <em>Measure the Wound</em> &mdash; the foundational record of harms.</a>
       </div>
     </div>
     <aside class="vc-mech reveal">
@@ -832,21 +1147,21 @@
       <div class="kind">Think Tank Dispatch</div>
       <h3 class="title">Parallel Negros</h3>
       <p class="lede">A foundational comparative dispatch from the E5 think tank — examining the parallel architectures that shape the lineage&rsquo;s path through American history, and the institutional remedies they require.</p>
-      <a href="https://sue-app-ec34c434.base44.app/DocParallelNegros" target="_blank" rel="noopener" class="link">Read the dispatch <span aria-hidden="true">→</span></a>
+      <a href="https://e5enclave.com/record/parallel-negros/" target="_blank" rel="noopener" class="link">Read the dispatch <span aria-hidden="true">→</span></a>
     </article>
     <article class="vc-record-card">
       <div class="num">№ II.</div>
       <div class="kind">Foundational Record</div>
       <h3 class="title">Measure the Wound</h3>
       <p class="lede">Documentation of the harms we repair. What is measured cannot be dismissed — this is the evidentiary foundation against which every E5 program is built.</p>
-      <a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener" class="link">Read the record <span aria-hidden="true">→</span></a>
+      <a href="https://e5enclave.com/record/measure-the-wound/" target="_blank" rel="noopener" class="link">Read the record <span aria-hidden="true">→</span></a>
     </article>
     <article class="vc-record-card">
       <div class="num">№ III.</div>
       <div class="kind">Campaign Framework</div>
       <h3 class="title">Restitution 246</h3>
       <p class="lede">The Lloyd Kelly framework — a disciplined wage-loss and opportunity-loss mechanism for the 246 years of stolen labor, anchored to the Craemer (2015) wage-hour methodology.</p>
-      <a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener" class="link">Read the campaign <span aria-hidden="true">→</span></a>
+      <a href="https://e5enclave.com/record/restitution-246/" target="_blank" rel="noopener" class="link">Read the campaign <span aria-hidden="true">→</span></a>
     </article>
   </div>
 </section>
@@ -904,11 +1219,11 @@
 <footer class="vc-foot" id="press">
   <div class="vc-foot-seal reveal" role="img" aria-label="E5 Enclave Coalition Seal">
     <svg class="vc-foot-seal-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-      <!-- Concentric ring system -->
-      <circle cx="160" cy="160" r="148" fill="none" stroke="#0a0908" stroke-width="1.2"/>
-      <circle cx="160" cy="160" r="138" fill="none" stroke="#6d1f20" stroke-width="0.5" opacity="0.45"/>
-      <circle cx="160" cy="160" r="100" fill="none" stroke="#0a0908" stroke-width="0.3" opacity="0.16"/>
-      <circle cx="160" cy="160" r="62" fill="none" stroke="#6d1f20" stroke-width="0.5" opacity="0.4"/>
+      <!-- Concentric ring system — slow rotation + radial breath -->
+      <circle cx="160" cy="160" r="148" fill="none" stroke="currentColor" stroke-width="1.2" color="var(--vc-ink)" class="ring-slow" stroke-dasharray="2 4"/>
+      <circle cx="160" cy="160" r="138" fill="none" stroke="var(--vc-oxblood, #6d1f20)" stroke-width="0.5" opacity="0.45" class="ring-breath"/>
+      <circle cx="160" cy="160" r="100" fill="none" stroke="var(--vc-ink, #0a0908)" stroke-width="0.3" opacity="0.16" class="ring-mid" stroke-dasharray="1 3"/>
+      <circle cx="160" cy="160" r="62" fill="none" stroke="var(--vc-oxblood, #6d1f20)" stroke-width="0.5" opacity="0.4" class="ring-breath"/>
 
       <!-- Mesh: dodecagon outline at r=100 (12 nodes, faint) -->
       <polygon class="mesh-poly" points="260,160 246.6,110 210,73.4 160,60 110,73.4 73.4,110 60,160 73.4,210 110,246.6 160,260 210,246.6 246.6,210"
@@ -945,13 +1260,14 @@
       </g>
 
       <!-- Center disk (occludes spokes under monogram) -->
-      <circle cx="160" cy="160" r="48" fill="#f4eee2" stroke="#0a0908" stroke-width="0.8"/>
+      <circle cx="160" cy="160" r="46" fill="var(--vc-bone, #f4eee2)" stroke="var(--vc-ink, #0a0908)" stroke-width="0.8"/>
 
-      <!-- E5 monogram -->
-      <text x="160" y="178" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="500" fill="#0a0908">
-        <tspan font-size="44">E</tspan>
-        <tspan font-size="34" font-style="italic" fill="#6d1f20" dx="-2" dy="-5">5</tspan>
-      </text>
+      <!-- E5 monogram — centered to seal geometry -->
+      <g transform="translate(160 160)">
+        <text x="0" y="14" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="500" fill="var(--vc-ink, #0a0908)">
+          <tspan font-size="46" dx="-6">E</tspan><tspan font-size="36" font-style="italic" fill="var(--vc-oxblood, #6d1f20)" dx="-3" dy="-6">5</tspan>
+        </text>
+      </g>
     </svg>
     <div class="vc-foot-seal-name">Enclave</div>
     <div class="vc-foot-seal-sub">— Sealed Juneteenth · MMXXVI · Liberty City —</div>
@@ -962,9 +1278,9 @@
       Convened in Liberty City, Florida. Set in Cormorant Garamond &amp; Inter. Printed for the Coalition of the Willing, founded Juneteenth, MMXXVI.
     </div>
     <div><h4>The Record</h4><ul>
-      <li><a href="https://sue-app-ec34c434.base44.app/DocParallelNegros" target="_blank" rel="noopener">Parallel Negros</a></li>
-      <li><a href="https://sue-app-ec34c434.base44.app/DocMeasureWound" target="_blank" rel="noopener">Measure the Wound</a></li>
-      <li><a href="https://sue-app-ec34c434.base44.app/DocReparations" target="_blank" rel="noopener">Restitution 246</a></li>
+      <li><a href="https://e5enclave.com/record/parallel-negros/" target="_blank" rel="noopener">Parallel Negros</a></li>
+      <li><a href="https://e5enclave.com/record/measure-the-wound/" target="_blank" rel="noopener">Measure the Wound</a></li>
+      <li><a href="https://e5enclave.com/record/restitution-246/" target="_blank" rel="noopener">Restitution 246</a></li>
     </ul></div>
     <div><h4>Departments</h4><ul>
       <li><a href="#doctrine">Doctrine</a></li>
@@ -984,7 +1300,7 @@
   </div>
   <div class="vc-foot-fine">
     <span>© MMXXVI <em>E5 Enclave Incorporated</em></span>
-    <span>Founded Juneteenth · Liberty City</span>
+    <span>Founded 2 June MMXXIV · Liberty City</span>
     <span>For the next thousand years</span>
   </div>
 </footer>
@@ -992,6 +1308,60 @@
 </main>
 
 <script>
+  // Palette toggle (editorial ↔ original)
+  (function(){
+    var KEY = 'e5-palette';
+    var html = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch(_) {}
+    if (saved === 'original' || saved === 'editorial') {
+      html.setAttribute('data-palette', saved);
+    } else {
+      html.setAttribute('data-palette', 'editorial');
+    }
+    var btn = document.getElementById('vc-palette-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function(){
+      var cur = html.getAttribute('data-palette') === 'original' ? 'original' : 'editorial';
+      var next = cur === 'editorial' ? 'original' : 'editorial';
+      html.setAttribute('data-palette', next);
+      try { localStorage.setItem(KEY, next); } catch(_) {}
+    });
+  })();
+
+  // Rolling counters — institutional accounting, not slot-machine roll.
+  (function(){
+    var nodes = document.querySelectorAll('[data-counter-target]');
+    if (!nodes.length) return;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function format(n){ return n.toLocaleString('en-US'); }
+    function run(node){
+      var target = parseInt(node.getAttribute('data-counter-target'), 10) || 0;
+      if (reduced) { node.textContent = format(target); return; }
+      var dur = Math.min(2200, 600 + target * 1.2);
+      var start = performance.now();
+      function tick(now){
+        var t = Math.min(1, (now - start) / dur);
+        var eased = 1 - Math.pow(1 - t, 3);
+        var v = Math.round(target * eased);
+        node.textContent = format(v);
+        if (t < 1) requestAnimationFrame(tick);
+        else {
+          node.classList.add('tick');
+          setTimeout(function(){ node.classList.remove('tick'); }, 700);
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+    if (!('IntersectionObserver' in window)) { nodes.forEach(run); return; }
+    var io2 = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { run(e.target); io2.unobserve(e.target); }
+      });
+    }, { threshold: 0.4 });
+    nodes.forEach(function(n){ io2.observe(n); });
+  })();
+
   // Reveal-on-scroll
   (function(){
     var els = document.querySelectorAll('.reveal');
