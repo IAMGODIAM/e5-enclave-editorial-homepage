@@ -1,3 +1,6 @@
+> ⚠️ **Frozen Design Artifact** — This repository is preserved as a static editorial homepage artifact.
+> Canonical E5 Enclave website: https://github.com/IAMGODIAM/e5-website
+
 # E5 Enclave Editorial Homepage
 
 A single-page editorial homepage for **E5 Enclave Incorporated — A Lineage-led Think Tank**.
